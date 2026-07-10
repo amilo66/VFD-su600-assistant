@@ -1,7 +1,6 @@
 /* ============================================================
-   SU600_WEB - Integración con IA (Groq - gratuito y rápido)
-   ============================================================ */
-
+ S U600_WEB - Integración con IA (Groq - gratuito y rápido)*
+ ============================================================ */
 const IA_KEY = 'su600_groq_api_key';
 const IA_CACHE_KEY = 'su600_ia_cache';
 
@@ -74,7 +73,6 @@ async function llamarGroqConReintentos(apiKey, messages, maxReintentos = 3) {
 
             const data = await response.json();
             return data.choices?.[0]?.message?.content || 'No se pudo obtener respuesta';
-            
         } catch (e) {
             if (i === maxReintentos - 1) throw e;
             const espera = Math.pow(2, i) * 1000;
@@ -91,23 +89,20 @@ async function pedirExplicacionIA(codigo, textoOriginal, contextoCompleto = '') 
     }
 
     const prompt = `Eres un experto en variadores de frecuencia SU-600. Explica en español sencillo qué hace este parámetro.
+    DATOS OFICIALES DEL PARÁMETRO ${codigo}:
+    ${contextoCompleto || textoOriginal}
+    Da una explicación clara y práctica de:
+    - Qué hace este parámetro (basándote SOLO en los datos oficiales)
+    - Para qué sirve en la práctica
+    - Cuándo necesitas ajustarlo
+    - Valores típicos o recomendados
 
-DATOS OFICIALES DEL PARÁMETRO ${codigo}:
-${contextoCompleto || textoOriginal}
-
-Da una explicación clara y práctica de:
-1. Qué hace este parámetro (basándote SOLO en los datos oficiales)
-2. Para qué sirve en la práctica
-3. Cuándo necesitas ajustarlo
-4. Valores típicos o recomendados
-
-IMPORTANTE: Usa SOLO la información oficial proporcionada. No inventes datos.
-Máximo 150 palabras.`;
+    IMPORTANTE: Usa SOLO la información oficial proporcionada. No inventes datos.
+    Máximo 150 palabras.`;
 
     const texto = await llamarGroqConReintentos(apiKey, [
         { role: 'user', content: prompt }
     ]);
-    
     guardarExplicacionCache(codigo, texto);
     return texto;
 }
@@ -119,17 +114,16 @@ async function pedirExplicacionIAChat(pregunta, contextoCompleto) {
     }
 
     const prompt = `Eres un experto en variadores de frecuencia SU-600. Responde en español de forma clara y práctica.
+    INFORMACIÓN OFICIAL DEL PARÁMETRO:
+    ${contextoCompleto}
 
-INFORMACIÓN OFICIAL DEL PARÁMETRO:
-${contextoCompleto}
+    PREGUNTA DEL USUARIO: ${pregunta}
 
-PREGUNTA DEL USUARIO: ${pregunta}
-
-INSTRUCCIONES IMPORTANTES:
-- Responde SOLO basándote en la información oficial proporcionada arriba
-- Si la pregunta no está relacionada con el parámetro, dilo amablemente
-- Sé conciso (máximo 100 palabras)
-- Si mencionas valores específicos, usa EXACTAMENTE los del manual`;
+    INSTRUCCIONES IMPORTANTES:
+    - Responde SOLO basándote en la información oficial proporcionada arriba
+    - Si la pregunta no está relacionada con el parámetro, dilo amablemente
+    - Sé conciso (máximo 100 palabras)
+    - Si mencionas valores específicos, usa EXACTAMENTE los del manual`;
 
     return await llamarGroqConReintentos(apiKey, [
         { role: 'user', content: prompt }
@@ -146,52 +140,49 @@ function mostrarConfiguracionIA() {
 
     const tarjeta = document.createElement("div");
     tarjeta.className = "tarjeta";
-    
     const apiKey = obtenerApiKey();
-    
+
     tarjeta.innerHTML = `
-        <h3>API Key de Groq</h3>
-        <p>Para usar la explicación con IA, necesitas una API key gratuita de Groq.</p>
-        <ol>
-            <li>Ve a <a href="https://console.groq.com/keys" target="_blank">Groq Console</a></li>
-            <li>Inicia sesión o crea una cuenta</li>
-            <li>Pulsa "Create API Key"</li>
-            <li>Copia la clave y pégala aquí</li>
-        </ol>
-        
-        <div class="form-field" style="margin-top: 20px;">
-            <label>API Key:</label>
-            <input type="password" id="api-key-input" value="${apiKey}" placeholder="gsk_...">
-        </div>
-        
-        <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
-            <button id="btn-guardar-key">💾 Guardar</button>
-            <button id="btn-probar-key">🧪 Probar conexión</button>
-            <button id="btn-borrar-cache">🗑️ Borrar caché de explicaciones</button>
-        </div>
-        
-        <div id="resultado-ia" style="margin-top: 15px;"></div>
+    <div class="info-ia" style="background: #f0f9ff; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #0284c7;">
+    <h3 style="margin-top: 0;">🤖 ¿Cómo obtener tu API Key gratuita?</h3>
+    <ol style="margin-left: 20px; line-height: 1.6; margin-bottom: 10px;">
+    <li>Ve a la web oficial de Groq: <a href="https://console.groq.com/keys" target="_blank" style="color: #0284c7;">console.groq.com/keys</a></li>
+    <li>Inicia sesión o crea una cuenta gratuita (puedes usar tu cuenta de Google).</li>
+    <li>Haz clic en <strong>"Create API Key"</strong>.</li>
+    <li>Copia la clave generada (empieza por <code>gsk_...</code>) y pégala aquí abajo.</li>
+    </ol>
+    <p style="font-size: 0.9em; color: #555; margin-bottom: 0;"> <em>La API de Groq es actualmente gratuita y muy rápida. Tu clave se guarda solo en tu dispositivo y no se envía a ningún otro sitio.</em></p>
+    </div>
+
+    <h3>Configurar API Key</h3>
+    <div class="form-field" style="margin-top: 20px;">
+    <label>API Key:</label>
+    <input type="password" id="api-key-input" value="${apiKey}" placeholder="gsk_...">
+    </div>
+    <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <button id="btn-guardar-key">💾 Guardar</button>
+    <button id="btn-probar-key">🧪 Probar conexión</button>
+    <button id="btn-borrar-cache">🗑️ Borrar caché de explicaciones</button>
+    </div>
+    <div id="resultado-ia" style="margin-top: 15px;"></div>
     `;
-    
     contenido.appendChild(tarjeta);
-    
+
     document.getElementById('btn-guardar-key').onclick = () => {
         const key = document.getElementById('api-key-input').value.trim();
         guardarApiKey(key);
         const resultado = document.getElementById('resultado-ia');
         resultado.innerHTML = '<p style="color: #16a34a;">✅ API key guardada</p>';
     };
-    
+
     document.getElementById('btn-probar-key').onclick = async () => {
         const key = document.getElementById('api-key-input').value.trim();
         if (!key) {
             alert('Primero guarda la API key');
             return;
         }
-        
         const resultado = document.getElementById('resultado-ia');
         resultado.innerHTML = '<p>Probando conexión...</p>';
-        
         try {
             guardarApiKey(key);
             await pedirExplicacionIA('P00.01', 'Control mode selection', 'P00.01: Modo de control. 0=V/F, 1=Vector Control.');
@@ -200,7 +191,7 @@ function mostrarConfiguracionIA() {
             resultado.innerHTML = `<p style="color: #dc2626;">❌ Error: ${e.message}</p>`;
         }
     };
-    
+
     document.getElementById('btn-borrar-cache').onclick = () => {
         if (confirm('¿Borrar todas las explicaciones guardadas?')) {
             localStorage.removeItem(IA_CACHE_KEY);
@@ -252,7 +243,6 @@ async function pedirConsultaCableadoIA(pregunta) {
 
     const contextoCableado = `
     Eres un experto en el cableado y la instalación del variador SU-600.
-
     BLOQUE DE CONTROL (Terminales):
     - 10V: Alimentación para potenciómetro externo.
     - GND: Tierra común para señales analógicas y digitales.
