@@ -1,0 +1,76 @@
+3.7 Description of the main control board jumper line
+
+J1
+File It means that the master control panel is ground
+OFF keep off Indicates the master panel ground off (default off)
+J2
+AVO file | Indicates the analog volume AO output voltage signal, 0-10V
+ACO keep off | Represents the analog AO output current signal, 0-20 mA
+J4
+Indicates that selecting a built-in keyboard
+P-Ifile potentiometer (the default is valid)
+P-E keep off It represents selection of an external keyboard
+J5
+AVI keep off | Indicates the analog Al input voltage signal, 0-10V
+ACI keep off | Represents the analog Al input current signal, 0-20 mA
+
+3.8 Wiring precautions
+
+(D When replacing the motor, the input power supply of the frequency converter must be switched off.
+
+@ switch the motor or the power frequency power supply only when the frequency converter stops output.
+
+(® In order to minimize the influence of electromagnetic interference, when the electromagnetic contactor and
+relay used are equally close to the frequency converter, the additional surge absorption device should be
+considered.
+
+(® Do not connect the AC input power supply to the frequency converter output terminals U, V, W.
+
+(® The external control line of the frequency converter should be equipped with an isolation device or a shielding line.
+
+(® The input command signal line should be wired separately besides shielding, preferably away from the main circuit line.
+
+(D When the carrier frequency is less than 4 KHz, the maximum distance between the frequency converter and the motor
+should be within 50 meters. When the carrier frequency is greater than 4 KHz, this distance should be reduced
+appropriately, and the wiring should be laid in the metal pipe.
+
+When the frequency converter is equipped with peripheral equipment (filters, reactors, etc.), the insulation resistance to
+the ground should be measured first with a 1000 volt to megohm meter, to ensure that it is not low after 4 megohm.
+
+© The phase capacitor or resistance absorber can not be installed at the output ends of the frequency converter U, V and W.
+
+@0 If the frequency converter needs to start frequently, do not turn off the power supply. The COM / RUN of the control
+terminal must be used for start and stop operation to avoid damage to the rectification bridge.
+
+@ I orderto prevent accidents, grounding terminal G must be reliably grounded (grounding impedance should be below
+100 Q), otherwise there will be leakage situation.
+
+@ When the main circuit wiring, please choose the wiring diameter specifications in accordance with the relevant
+provisions of the national electrical regulations.
+
+4. protocol
+
+1. RTU mode and format
+
+When the controller communicates on the Modbus bus in RTU mode, every 8-bit bytes in the information is divided into
+two 4-bit 16-decimal characters. The main advantage of this mode is that the density of its transmitted characters is higher
+than the ASCII mode at the same baud rate, and each information must be transmitted continuously.
+(1) The format of each byte in the RTU mode
+
+Coding system: 8-bit binary, hex-system 0-9, A-F.
+
+Data bit: 1 starting bit, 8 bits of data (low send first), stop bit for 1 bit, parity bit can be selected.(Reference RTU data frame
+is the sequence diagram
+
+Error check zone: cyclic redundancy check (CRC).
+
+(2) RTU data frame bit sequence diagram
+
+tape parity check
+
+(o [0 [ 2 5 a5 o7 ] 5 ] v ]om]
+No odd parity
+
+[ [ [ 2 [ [0 o] 7] o]
+
+7

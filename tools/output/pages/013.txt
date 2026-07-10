@@ -1,0 +1,116 @@
+210EH
+
+PID feedback value (two decimal places)
+
+210FH
+
+PID Setpoint (two decimal places)
+
+2110H
+
+continue to have
+
+2111H
+
+Pulse input frequency
+
+2112H
+
+The current failure
+
+2113H
+
+The current timing
+
+2114H
+
+Enter terminal status
+
+2115H
+
+Output terminal status
+
+e == |=m|=m|=|=
+
+2116H
+
+BIT 0: operation / downtime
+
+BIT 1: forward turn / reverse
+
+BIT 2: click on it
+
+BIT 3: DC brake
+
+BIT 4: reserved
+
+BIT 5: Overvoltage limit
+
+BIT 6: constant speed and frequency reduction
+BIT 7: Overflow limit
+
+BIT 8 ~ 9:00-zero speed / 01-acceleration /
+10-deceleration / 11-uniform speed
+
+BIT 10: Overload forecast alarm
+
+BIT 11: reserved
+
+BIT 12 ~ 13 Run command channel: 00-Panel /
+01-Terminal / 10-Communication
+
+BIT 14 ~ 15 Bus voltage status: 00-normal / 01-LV
+protection / 10-overvoltage protection
+
+2101H
+
+Bit 0: Run
+
+Bit 1: shutdown
+
+Bit 2: click on it
+
+Bit 3: forward
+
+Bit 4: reverse
+
+Bit 5 to Bit 7: reserved
+
+Bit 8: Communication given
+
+Bit 9: Analog volume signal input
+Bit 10: Communication run command channel
+Bit 11: Parameter lock
+
+Bit 12: In operation
+
+Bit 13: A little moving command
+Bit 14 to Bit 15: reserved
+
+Read the fault code
+
+description
+
+2100H
+
+00: No abnormality
+
+01: The module failure
+
+02: Overvoltage
+
+03: Temperature failure
+
+04: frequency converter overload
+05: Motor overload
+
+06: External failure
+
+07~09: Retention
+
+10: Accelerate medium and overflow
+11: Overcurrent
+
+12: Overcurrent in constant speed
+13: Keep
+

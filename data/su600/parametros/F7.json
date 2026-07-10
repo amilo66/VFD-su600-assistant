@@ -1,0 +1,133 @@
+[
+    {
+        "codigo": "F7.00",
+        "nombre": "Counting and timing mode",
+        "descripcion": "LED bit: count reaches processing. LED ten tens: reserved. LED 100 bits: timing arrival processing. LED thousand bits: reserved.",
+        "rango": "000~303",
+        "fabrica": "103",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.01",
+        "nombre": "Counter reset value setting",
+        "descripcion": "Sets the counter-reset value.",
+        "rango": "[F7.02]~9999",
+        "fabrica": "1",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.02",
+        "nombre": "Counter detection value setting",
+        "descripcion": "Set the counter detection value.",
+        "rango": "0~[F7.01]",
+        "fabrica": "1",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.03",
+        "nombre": "Timeline time setting",
+        "descripcion": "Set timing time.",
+        "rango": "0~9999s",
+        "fabrica": "0s",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.08",
+        "nombre": "Pop frequency control",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Prohibit"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Valid"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.09",
+        "nombre": "Amplitude control",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Fixed swing. The swing reference value is the maximum output frequency (F0.04)."
+            },
+            {
+                "valor": "1",
+                "descripcion": "Change the swing. The swing amplitude reference value is the given channel frequency."
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.10",
+        "nombre": "Start mode selection of swing frequency shutdown",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Start in the state of memory before shutdown"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Start starting again"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.11",
+        "nombre": "Pressing frequency amplitude",
+        "descripcion": "The pendulum frequency amplitude is the percentage relative to the maximum output frequency (F0.04).",
+        "rango": "0.0~100.0%",
+        "fabrica": "0.0%",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.12",
+        "nombre": "The jump frequency",
+        "descripcion": "This function code refers to the range of rapid decline after the frequency reaches the upper frequency of the swing frequency process.",
+        "rango": "0.0~50.0%",
+        "fabrica": "0.0%",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.13",
+        "nombre": "The time of swing frequency rise",
+        "descripcion": "Running time from the swing frequency to the swing frequency.",
+        "rango": "0.1~3600.0s",
+        "fabrica": "5.0",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.14",
+        "nombre": "The drop time of swing frequency",
+        "descripcion": "Running time from the upper swing frequency to the lower swing frequency.",
+        "rango": "0.1~3600.0s",
+        "fabrica": "5.0",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.15",
+        "nombre": "Upper limit frequency delay",
+        "descripcion": "Set the upper and lower limits of swing frequency.",
+        "rango": "0.1~3600.0s",
+        "fabrica": "5.0",
+        "pagina_pdf": 26
+    },
+    {
+        "codigo": "F7.16",
+        "nombre": "Lower lower frequency delay",
+        "descripcion": "Set the upper and lower limits of swing frequency.",
+        "rango": "0.1~3600.0s",
+        "fabrica": "5.0",
+        "pagina_pdf": 26
+    }
+]

@@ -1,0 +1,148 @@
+F2.13
+
+Input terminal X1 function
+
+F2.14
+
+Input terminal X2 function
+
+F2.15
+
+Input terminal X3 function
+
+F2.16
+
+Input terminal X4 function
+
+F2.17
+
+continue to have
+
+0: control end idle
+
+1: forward point control
+
+2: reverse point control
+
+3: Forward rotation control (FWD)
+
+4: Reverse Control (REV)
+
+5: three-line operation control
+
+6: free shutdown control
+
+7: External shutdown signal input (STOP)
+
+8: External reset signal input (RST)
+
+9: External fault open input
+
+10: frequency increase instruction (UP)
+
+11: Frequency decreasing instruction (DOWN)
+
+13: Multi-segment speed selection of S1
+
+14: multiple speed selection S2
+
+15: multiple speed selection S3
+
+16: running command channel forced for terminal
+17: running command channel forced
+
+for communication
+
+18: Stop the DC brake command
+
+19: The frequency will switch to AI
+
+20: frequency switches to digital frequency 1
+
+21: frequency switches to digital frequency 2
+
+22: reserved
+
+23: Counter zero clearance signal
+
+24: Counter trigger signal
+
+25: timer reset signal
+
+26: Timer-trigger signal
+
+27: acceleration and deceleration time selection
+28: Suspension pause (stop at current frequency)
+29: pendulum frequency reset (back to center frequency)
+30: External shutdown / reset signal input (STOP / RST)
+41: Terminal detectlon pulse shutdown (stop after a few
+
+seconds of hange in Voltage level on the
+terminal, tlme F2.3
+
+30~60: Retention
+
+0~60
+
+0~60
+
+0~60
+
+0~60s
+
+F2.18
+
+The FWD / REV terminal
+control mode
+
+0: Second-line control mode 1
+1: Second-line control mode 2
+2: Three-line control mode 1
+3: Three-line control mode 2
+4: Three-line control mode 3
+5: Keep
+
+F2.19
+
+0: Invalid terminal running command when powered on
+1: The terminal running command is valid when
+powered up
+
+F2. 20
+
+R Output Settings
+
+F2.21
+
+continue to have
+
+0: Idle.
+
+1: The frequency converter is ready for operation
+2: converter in operation
+
+3: converter in operation at zero speed
+
+4: External fault shutdown
+
+5: inverter fault
+
+6: frequency / speed arrival signal (FAR)
+
+7: Frequency / speed level detection signal (FDT)
+8: Output frequency reaches the upper limit
+
+9: Output frequency reaches the lower limit
+
+10: Frequter overload forecast alarm
+
+11: Timer overflow signal
+
+12: Counter detects the signal
+
+13: Counter to reset the signal
+
+14: Auxiliary motor
+
+0~20
+

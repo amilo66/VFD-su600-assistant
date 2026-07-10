@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0284c7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSWE SU-600</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>SUSWE SU-600</h1>
+        <p>Asistente técnico del variador</p>
+    </header>
+
+    <nav>
+        <button onclick="abrirSeccion('inicio')">🏠 Inicio</button>
+        <button onclick="abrirSeccion('buscar')">🔍 Buscar</button>
+        <button onclick="abrirSeccion('parametros')">⚙️ Parámetros</button>
+        <button onclick="abrirSeccion('favoritos')">⭐ Favoritos</button>
+    </nav>
+
+    <main id="contenido">
+        <!-- Aquí se carga el contenido dinámico -->
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/backup.js"></script>
+    <script src="js/manual_datos.js"></script>
+    <script src="js/mi_configuracion.js"></script>
+    <script src="js/instalaciones.js"></script>
+    <script src="js/vista_instalaciones.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/fallos.js"></script>
+    <script src="js/terminales.js"></script>
+    <script src="js/modbus.js"></script>
+    <script src="js/macros.js"></script>
+    <script src="js/instalacion.js"></script>
+    <script src="js/ia.js"></script>
+    <script src="js/parametros.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/notas.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(registration => {
+                    console.log('SW registrado con éxito:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Fallo al registrar el SW:', error);
+                });
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+. . . 7.5S
+decelerati The time required for the inverter to slow down
+FO. 11 ieceleration | 5 the maximum output frequency to the zero 5. 5~7. 5KW
+time frequency
+15.0S
+Operation 0: Forward turn
+FO. 12 direction 1: reverse 0~2 0 O
+setting 2: No reversal
+0: Linear curve
+Fo.13 | V/Fcurve 1: Square curve 0~39 0 %
+setting 2: Multipoint VF curve
+. Manual torque lift which is the 0 Model
+FO.14 | Recurrent lift percentage relative to the motor voltage 0.07-30.0% setting ©
+Torque lift . . . .
+F0.15 | cuto This setting is the lift cut off frequency point 0. 0~50. Otz 15.00z | X
+frequency q
+2.0~16. OKHz
+) For the occasion of silent operation, the carrier 0. 4~3. OKW
+The carrier frequency can be appropriately increased to Model
+FO.16 | frequency meet the requirements, but increasing the carrier | 4. 0KHz setting x
+setting frequency will increase the heat value of the 4. 0~T7. 5KW
+frequency converter.
+3. OKHz
+TheV/F
+F0.17 | frequency Vi 0.1~ F2 12.5Hz X
+value, F1
+Fo.18 | V/Fvoltage 0.0~ V2 25.0% | X
+value V1 Rated
+The V/F /i
+F0.19 | frequency v | F1~TF3 25. 0Hz X
+value, F2 4 |
+|
+: V / F voltage | ~ 9
+FO. 20 value V2 o | Vi~V3 50.0% X
+< |
+|
+TheV/F Vi | ~ ¥
+F0.21 | frequency | F2 ~ rated frequency 37.5Hz X
+value, F3 | of motor [F4.03]
+|
+|
+i F max (VZ ~le()1.0%*U;)ute
+V / F voltage rated voltage o .
+ro.22 | Jab YOl motor [F4.00) 75. 0% X
+. Set any non-zero number for 3 minutes or a
+F0.23 | User password poweryfaﬂure to take effect. 0~9999 0 o
+0:0.1Hz
+1:1Hz
+Frequency Note: To set this parameter, be sure to check the
+Fo. 24 | display maximum output frequency (F0.04), the frequency | 0~1 0 0]
+resolution upper limit (F0.05), the motor rated frequency
+selection (F4.03) and other parameters related to the
+frequency.
+F1 group-auxiliary running parameters
+FC name Set the scope Minimum unit Eﬁfﬁ}fg change
+

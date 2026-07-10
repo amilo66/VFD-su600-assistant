@@ -1,0 +1,82 @@
+[
+  {
+    "codigo": "E0C1",
+    "nombre": "Sobrecorriente en aceleración (Overflow in accelerated operation)",
+    "causas": [
+      "El tiempo de aceleración es demasiado corto",
+      "La potencia del variador es demasiado pequeña para el motor",
+      "Configuración incorrecta de la curva V/F o del torque boost"
+    ],
+    "soluciones": [
+      "Aumentar el tiempo de aceleración (F0.10)",
+      "Elegir un variador de mayor potencia",
+      "Ajustar la curva V/F (F0.13) o el torque boost (F0.14)"
+    ],
+    "pagina": 28
+  },
+  {
+    "codigo": "ESC1",
+    "nombre": "Cortocircuito / Subtensión (Short circuit / Undervoltage)",
+    "causas": [
+      "Cortocircuito o puesta a tierra en la salida del variador",
+      "Sobrecorriente instantánea del variador",
+      "La placa de control está anormal o tiene interferencias graves",
+      "Daño en los dispositivos de potencia (IGBTs)"
+    ],
+    "soluciones": [
+      "Revisar el cableado del motor y aislarlo",
+      "Ver las medidas para sobrecorriente (aumentar tiempos)",
+      "Contactar al servicio técnico del fabricante"
+    ],
+    "pagina": 28
+  },
+  {
+    "codigo": "EOL1",
+    "nombre": "Sobrecarga del variador (Inverter overload)",
+    "causas": [
+      "Configuración incorrecta de la curva V/F o torque boost",
+      "El voltaje de la red es demasiado bajo",
+      "El tiempo de aceleración es demasiado corto",
+      "La carga del motor es demasiado pesada"
+    ],
+    "soluciones": [
+      "Ajustar la curva V/F y el torque boost",
+      "Revisar el voltaje de la red",
+      "Aumentar el tiempo de aceleración",
+      "Elegir un variador de mayor potencia"
+    ],
+    "pagina": 28
+  },
+  {
+    "codigo": "EOL2",
+    "nombre": "Sobrecarga del motor (Motor overload)",
+    "causas": [
+      "Configuración incorrecta de la curva V/F o torque boost",
+      "El voltaje de la red es demasiado bajo",
+      "El motor está bloqueado o la carga cambia bruscamente",
+      "El factor de protección contra sobrecarga del motor no está configurado correctamente"
+    ],
+    "soluciones": [
+      "Ajustar la curva V/F y el torque boost",
+      "Revisar el voltaje de la red",
+      "Revisar la carga mecánica",
+      "Configurar correctamente el factor de protección (F5.01)"
+    ],
+    "pagina": 28
+  },
+  {
+    "codigo": "E485",
+    "nombre": "Fallo de comunicación RS485 (RS485 communication failure)",
+    "causas": [
+      "No coincide la velocidad (baud rate) con el dispositivo superior",
+      "Interferencias en el canal RS485",
+      "Tiempo de espera de comunicación agotado"
+    ],
+    "soluciones": [
+      "Ajustar la velocidad de comunicación (F6.01)",
+      "Revisar si el cable de comunicación está apantallado y bien tendido",
+      "Reintentar la comunicación"
+    ],
+    "pagina": 28
+  }
+]

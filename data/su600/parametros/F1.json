@@ -1,0 +1,136 @@
+[
+    {
+        "codigo": "F1.00",
+        "nombre": "Start way",
+        "descripcion": "LED bit: starting mode. LED ten: power failure or abnormal restart mode.",
+        "rango": "0000~0012",
+        "fabrica": "00",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.01",
+        "nombre": "Frequency of starting",
+        "rango": "0.0~50.0Hz",
+        "fabrica": "1.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.02",
+        "nombre": "Start the DC brake voltage",
+        "rango": "0.0~50.0%×motor rated voltage",
+        "fabrica": "0.0%",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.03",
+        "nombre": "Start the DC brake time",
+        "rango": "0.0~30.0s",
+        "fabrica": "0.0s",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.04",
+        "nombre": "Downtime method",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Deceleration shutdown"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Free shutdown"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.09",
+        "nombre": "Set the moving frequency of the positive turning point",
+        "descripcion": "Set the point movement forward and reverse frequency.",
+        "rango": "0.0~50.0Hz",
+        "fabrica": "10.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.10",
+        "nombre": "Insert the point frequency setting",
+        "descripcion": "Set the point movement forward and reverse frequency.",
+        "rango": "0.0~50.0Hz",
+        "fabrica": "10.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.13",
+        "nombre": "Jump frequency",
+        "descripcion": "By setting the jump frequency and range, the frequency converter can avoid the mechanical resonance point of the load.",
+        "rango": "0.0~Upper limit frequency",
+        "fabrica": "0.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.14",
+        "nombre": "Jump range",
+        "descripcion": "By setting the jump frequency and range, the frequency converter can avoid the mechanical resonance point of the load.",
+        "rango": "0.0~10.0Hz",
+        "fabrica": "0.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.17",
+        "nombre": "Multi-segment speed frequency 1",
+        "descripcion": "Set the segment speed-1 frequency.",
+        "rango": "-Upper limit frequency~upper limit frequency",
+        "fabrica": "5.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.18",
+        "nombre": "Multi-segment speed frequency 2",
+        "descripcion": "Set the segment speed of 2 frequency.",
+        "rango": "-Upper limit frequency~upper limit frequency",
+        "fabrica": "10.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.19",
+        "nombre": "Multi-segment speed frequency 3",
+        "descripcion": "Set the segment speed of 3 frequency.",
+        "rango": "-Upper limit frequency~upper limit frequency",
+        "fabrica": "15.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.20",
+        "nombre": "Multi-segment speed frequency 4",
+        "descripcion": "Set the segment speed of 4 frequency.",
+        "rango": "Upper limit frequency~upper limit frequency",
+        "fabrica": "20.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.21",
+        "nombre": "Multi-segment speed frequency 5",
+        "descripcion": "Set the segment speed of 5 frequency.",
+        "rango": "-Upper limit frequency~upper limit frequency",
+        "fabrica": "25.0Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.22",
+        "nombre": "Multi-segment speed frequency 6",
+        "descripcion": "Set the segment speed of 6 frequency.",
+        "rango": "-Upper limit frequency~upper limit frequency",
+        "fabrica": "37.5Hz",
+        "pagina_pdf": 18
+    },
+    {
+        "codigo": "F1.23",
+        "nombre": "Multi-segment speed frequency 7",
+        "descripcion": "Set the segment speed of 7 frequency.",
+        "rango": "-Upper limit frequency~upper limit frequency",
+        "fabrica": "50.0Hz",
+        "pagina_pdf": 18
+    }
+]

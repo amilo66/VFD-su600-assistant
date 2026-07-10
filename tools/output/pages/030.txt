@@ -1,0 +1,61 @@
+set to 0.0% with no burst frequency.
+Running time from the swing frequency to the .
+F7.13 | The time of swing frequency rise swing fliquency. g frequency 0. 1~3600. 0s 5.0 @)
+The drop time of swing Running time from the upper swing frequency
+F7.14 frequency to the lower swing frequency. 0.1~3600. 0s 5.0 O
+F7.15 | Upper limit frequency delay 0. 1~3600. 0s 5.0 O
+Set the upper and lower limits of swing frequency.
+F7.16 Lower lower frequency delay 0. 1~3600. 0s 5.0 O
+F8 group-Management and display parameters
+group g play p
+FC name Set the scope Minimum unit | Factory setting | change
+P
+. : For example, F8.00=2, to select the output voltage
+Run to monitor the primary ¢ L
+F8. 00 parameter project selection (d-02), then the default display item in the main 0~31 0 O
+monitoring interface is the current output voltage value.
+: : B For example, F8.01=3, select the bus voltage (d-03)
+D Xs t th 4 ?
+F8. 01 P;X;;ﬁi ir?e(;ils(e)f:ctisnmam Fhen the d‘efault display item in the main monitoring 0~31 1 O
+interface is the current bus voltage value.
+: o For example, F8.02=4, to select the output current (d-02),
+Run S dary displ lid ’
+F8. 02 Hn Seconcery disp ay (vali then the default display item in the main monitoring 0~31 4 O
+for dual display only)
+interface is the current output voltage value.
+: s cenl, For example, F8.03=3, select the bus voltage (d-03)
+Downt: liary displ ’ ’ ;
+F8. 03 (V(;YZ(? ;;:]Zi:f éilsll;lyayl(s)&;g/ then the default display item in the main monitoring 0~31 3 O
+interface is the current bus voltage value.
+. . Used to correct the speed scale display error,
+F8. 04 Motor speed display coefficient no effect on the actugl speed. P 0.01~99.99 1.00 O
+0: No operation
+The frequency converter is in the normal parameter
+reading and writing state. Function code setpoint.
+Whether it can be changed is related to the setting
+status of the user password and the current working
+status of the frequency converter.
+F8. 05 | Parameter initialization 1: restore the factory settin 0~2 0 X
+All user parameters shall restore the factory settings
+according to the model.
+2: Clear the fault record
+Clear up the contents of the fault record (d-19~d-24).
+After pleted, this function code
+will automatlcally clear the 0.
+F8. 06 | continue to have - 0 0 X
+The F9 group- -the manufacturer's parameters
+FC | name | Set the scope | Minimum unit Factory setting | change
+F9. 00 | Manufacturer password | 1~9999 | 1 | skekoksk | &
+Group d-Monitoring the parameter group
+FC name scope Minimum unit | Factory setting | change
+d-00 Output Frequency (Hz) 0. 0~999. 9Hz 0. 1Hz 0. OHz L 2
+d-01 Set Frequency (Hz) 0. 0~999. 9Hz 0. 1Hz 50. OHz ¢
+d-02 output voltage (V) 0~999V 1V oV *
+d-03 busbar voltage (V) 0~999V 1V Model setting <
+d-04 | output () 0.0~999.9A 0. 1A 0. 0A *
+i -
+d-05 (r}?rtr?)r rotation speed 0~60000rpm 1rpm Model setting | 4
+d-06 |Analoginputto Al (V/mA)| 0. 00~10. 00V/0. 00~20. 00mA 0.01V/0. 01mA 0. 00V/mA L 4
+
+26
+

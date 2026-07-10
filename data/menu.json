@@ -1,0 +1,80 @@
+[
+    {
+        "id": "buscar",
+        "icono": "🔍",
+        "titulo": "Buscar",
+        "descripcion": "Buscador de parámetros y manual"
+    },
+    {
+        "id": "parametros",
+        "icono": "⚙️",
+        "titulo": "Parámetros",
+        "descripcion": "Lista de parámetros F0-F9"
+    },
+    {
+        "id": "favoritos",
+        "icono": "⭐",
+        "titulo": "Favoritos",
+        "descripcion": "Tus parámetros guardados"
+    },
+    {
+        "id": "notas",
+        "icono": "📝",
+        "titulo": "Mis Notas",
+        "descripcion": "Notas personales"
+    },
+    {
+        "id": "mi_configuracion",
+        "icono": "🛠️",
+        "titulo": "Mi Configuración",
+        "descripcion": "Tus valores configurados"
+    },
+    {
+        "id": "manual",
+        "icono": "📖",
+        "titulo": "Manual PDF",
+        "descripcion": "Ver el manual completo"
+    },
+    {
+        "id": "alarmas",
+        "icono": "⚠️",
+        "titulo": "Alarmas y Fallos",
+        "descripcion": "Códigos de error y diagnóstico con IA"
+    },
+    {
+        "id": "terminales",
+        "icono": "🔌",
+        "titulo": "Terminales y Cableado",
+        "descripcion": "Mapa de bornes, jumpers y asistente de cableado"
+    },
+    {
+        "id": "modbus",
+        "icono": "📡",
+        "titulo": "Modbus RTU",
+        "descripcion": "Protocolo de comunicación"
+    },
+    {
+        "id": "macros",
+        "icono": "📋",
+        "titulo": "Macros",
+        "descripcion": "Configuraciones rápidas"
+    },
+    {
+        "id": "instalaciones",
+        "icono": "🏭",
+        "titulo": "Mis Instalaciones",
+        "descripcion": "Gestiona tus variadores y motores"
+    },
+    {
+        "id": "backup",
+        "icono": "💾",
+        "titulo": "Copia de Seguridad",
+        "descripcion": "Exportar o restaurar todos los datos"
+    },
+    {
+        "id": "config_ia",
+        "icono": "🤖",
+        "titulo": "Configuración IA",
+        "descripcion": "API key de Groq para explicaciones"
+    }
+]

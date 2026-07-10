@@ -1,0 +1,9 @@
+[
+    {
+        "codigo": "F9.00",
+        "nombre": "Manufacturer password",
+        "rango": "1~9999",
+        "fabrica": "****",
+        "pagina_pdf": 27
+    }
+]

@@ -1,0 +1,554 @@
+{
+    "P00.01": {
+        "nombre_es": "Modo de control",
+        "explicacion_es": "Selecciona cómo controla el variador el motor. V/F (0) es para uso general, Vector Control (1,2) es para más precisión y par."
+    },
+    "P00.02": {
+        "nombre_es": "Fuente de comando de arranque",
+        "explicacion_es": "De dónde viene la orden de marcha/paro. 0=Teclado, 1=Bornes, 2=Comunicación."
+    },
+    "P00.03": {
+        "nombre_es": "Fuente de frecuencia",
+        "explicacion_es": "De dónde viene la velocidad objetivo. Puede ser del teclado, entrada analógica, comunicación, etc."
+    },
+    "P00.11": {
+        "nombre_es": "Tiempo de aceleración",
+        "explicacion_es": "Segundos que tarda en ir de 0 a frecuencia máxima. Más lento = menos picos de corriente."
+    },
+    "P00.12": {
+        "nombre_es": "Tiempo de deceleración",
+        "explicacion_es": "Segundos que tarda en frenar de frecuencia máxima a 0. Más lento = menos sobretensión."
+    },
+    "P02.01": {
+        "nombre_es": "Frecuencia máxima",
+        "explicacion_es": "La velocidad más alta que puede alcanzar el motor (en Hz)."
+    },
+    "P02.02": {
+        "nombre_es": "Frecuencia de arranque",
+        "explicacion_es": "Frecuencia mínima al arrancar. Útil para vencer la fricción inicial."
+    },
+    "P02.05": {
+        "nombre_es": "Corriente nominal del motor",
+        "explicacion_es": "La corriente del motor en amperios. IMPORTANTE: pon el valor de la placa del motor."
+    },
+    "P04.01": {
+        "nombre_es": "Curva V/F",
+        "explicacion_es": "Cómo varía el voltaje con la frecuencia. Lineal (0) para cargas normales, cuadrática (2) para bombas/ventiladores (ahorra energía)."
+    },
+    "P04.02": {
+        "nombre_es": "Torque boost",
+        "explicacion_es": "Extra de voltaje al arrancar para vencer la inercia. Útil para cintas transportadoras."
+    },
+    "F0.00": {
+        "nombre_es": "Frecuencia actual",
+        "explicacion_es": "La velocidad a la que está girando el motor ahora mismo (en Hz)."
+    },
+    "F0.01": {
+        "nombre_es": "Corriente de salida",
+        "explicacion_es": "Cuánta corriente está consumiendo el motor ahora (en amperios)."
+    },
+    "F0.02": {
+        "nombre_es": "Voltaje de salida",
+        "explicacion_es": "El voltaje que el variador está enviando al motor."
+    },
+    "F0.03": {
+        "nombre_es": "Voltaje del bus DC",
+        "explicacion_es": "El voltaje interno del variador. Debe estar alrededor de 540V para 400V de entrada."
+    },
+    "F0.04": {
+        "nombre_es": "Velocidad del motor",
+        "explicacion_es": "RPM reales del motor calculadas a partir de la frecuencia."
+    },
+    "F0.05": {
+        "nombre_es": "Frecuencia de inicio de frenado DC",
+        "explicacion_es": "A partir de qué frecuencia se activa el frenado por inyección de corriente continua al parar."
+    },
+    "F1.00": {
+        "nombre_es": "Estado de entradas digitales",
+        "explicacion_es": "Muestra qué entradas digitales (DI1-DI6) están activas ahora mismo."
+    },
+    "F1.01": {
+        "nombre_es": "Estado de salidas digitales",
+        "explicacion_es": "Muestra qué salidas de relé están activas."
+    },
+    "F2.00": {
+        "nombre_es": "Energía consumida",
+        "explicacion_es": "Contador de energía eléctrica consumida en kWh."
+    },
+    "F7.00": {
+        "nombre_es": "Último fallo",
+        "explicacion_es": "El código del último error que ocurrió. Útil para diagnóstico."
+    },
+    "F0.12": {
+        "nombre_es": "Dirección de giro",
+        "explicacion_es": "Establece el sentido de giro del motor, si F0.12=1 se invierte el sentido de giro"
+    },
+    "F0.08": {
+        "nombre_es": "Número de frecuencia",
+        "explicacion_es": "Es el número de frecuencia dado entre 0.0 y 10.0, utilizado para configurar la frecuencia del variador de frecuencia SU-600."
+    },
+    "F0.09": {
+        "nombre_es": "Frecuencia 0",
+        "explicacion_es": "Establece la frecuencia 0 en el variador, con un rango válido de 0000 a 2111 en formato hexadecimal."
+    },
+    "F0.15": {
+        "nombre_es": "Frecuencia de corte de elevación",
+        "explicacion_es": "Este ajuste establece el punto de frecuencia de corte de elevación, con un rango de 0 a 50 Hz y un valor predeterminado de 15 Hz."
+    },
+    "F0.17": {
+        "nombre_es": "Frecuencia de referencia",
+        "explicacion_es": "Establece la frecuencia de referencia del variador, con un rango de 0.1 a 12.5 Hz, configurada mediante el parámetro F2."
+    },
+    "F0.21": {
+        "nombre_es": "frecuencia base",
+        "explicacion_es": "Establece la frecuencia base del variador, con un valor de 37.5Hz como frecuencia nominal, ajustable a través de F2."
+    },
+    "F0.23": {
+        "nombre_es": "Contraseña de usuario",
+        "explicacion_es": "Establece la contraseña de usuario para que tenga efecto, con un rango de 0 a 9999. La contraseña debe ser configurada para activar o desactivar ciertas funciones del variador de frecuencia."
+    },
+    "F1.15": {
+        "nombre_es": "Combinación de modo",
+        "explicacion_es": "Configuración de la combinación para el modo en F1.15, que permite seleccionar el modo de operación del variador de frecuencia."
+    },
+    "F1.03": {
+        "nombre_es": "Tiempo de frenado",
+        "explicacion_es": "Establece el tiempo de frenado del variador de frecuencia, ajustable entre 0.0 y 30.0 segundos, con un valor predeterminado de 0.0 segundos."
+    },
+    "F1.04": {
+        "nombre_es": "Parada de deceleración",
+        "explicacion_es": "Este parámetro controla el tipo de parada del variador de frecuencia, permitiendo elegir entre parada con deceleración (0) o parada libre (1)."
+    },
+    "F1.05": {
+        "nombre_es": "frecuencia de arranque de freno",
+        "explicacion_es": "Establece la frecuencia de inicio para el frenado del variador de frecuencia, en este caso 0 Hz."
+    },
+    "F1.06": {
+        "nombre_es": "Freno DC",
+        "explicacion_es": "Establece el freno de corriente continua en función del voltaje nominal del motor, en este caso 0.0% del voltaje nominal."
+    },
+    "F1.07": {
+        "nombre_es": "Parada DC",
+        "explicacion_es": "Tiempo que tarda el variador en detener la salida de corriente continua después de recibir la orden de parada, ajustable entre 0 y 30 segundos."
+    },
+    "F1.08": {
+        "nombre_es": "Freno DC",
+        "explicacion_es": "Tiempo de frenado en corriente continua, ajustable entre 0.00 y 99.99 segundos, con un valor predeterminado de 0.00 segundos"
+    },
+    "F1.09": {
+        "nombre_es": "Frecuencia de",
+        "explicacion_es": "Establece la frecuencia de operación del variador, es decir, la frecuencia a la que se controlará el motor."
+    },
+    "F1.10": {
+        "nombre_es": "ajuste de frecuencia",
+        "explicacion_es": "Configuración del valor de frecuencia del variador, que permite ajustar la velocidad del motor según sea necesario. Este parámetro es fundamental para controlar el rendimiento del motor y del sistema en general."
+    },
+    "F1.12": {
+        "nombre_es": "Tiempo de aceleración",
+        "explicacion_es": "Es el tiempo que tarda el variador en alcanzar la velocidad de régimen desde el arranque, aplicable para motores de 5.5 a 17.5 kW."
+    },
+    "F1.13": {
+        "nombre_es": "Frecuencia de salto",
+        "explicacion_es": "Establece la frecuencia de salto y rango, permitiendo configurar la frecuencia a 0 Hz"
+    },
+    "F1.14": {
+        "nombre_es": "Punto de resonancia de carga",
+        "explicacion_es": "Establece el punto de resonancia de la carga en el variador de frecuencia, permitiendo ajustar el rango de salto. El valor se expresa en Hz."
+    },
+    "F1.17": {
+        "nombre_es": "Límite superior de frecuencia de velocidad 1",
+        "explicacion_es": "Establece el límite superior de frecuencia para el segmento de velocidad 1, controlando la velocidad del variador de frecuencia."
+    },
+    "F1.18": {
+        "nombre_es": "frecuencia de velocidad 2",
+        "explicacion_es": "Establece la velocidad del segmento 2 en la frecuencia límite superior, permitiendo ajustar la velocidad en ese rango de frecuencia."
+    },
+    "F1.19": {
+        "nombre_es": "frecuencia de velocidad 3",
+        "explicacion_es": "Establece la velocidad del segmento 3 en la frecuencia límite superior, permitiendo ajustar la velocidad en ese rango de frecuencia específico."
+    },
+    "F1.20": {
+        "nombre_es": "Frecuencia de velocidad 4",
+        "explicacion_es": "Establece la velocidad del segmento 4 en la frecuencia límite superior, permitiendo controlar la velocidad en ese rango de frecuencia."
+    },
+    "F1.21": {
+        "nombre_es": "Frecuencia de velocidad 5",
+        "explicacion_es": "Establece la velocidad del segmento 5 en la frecuencia límite superior, permitiendo ajustar la velocidad en ese rango de frecuencia."
+    },
+    "F1.23": {
+        "nombre_es": "Frecuencia de velocidad 7",
+        "explicacion_es": "Establece el límite de frecuencia superior para la velocidad del segmento 7, permitiendo controlar la frecuencia máxima a la que opera el variador."
+    },
+    "F1.35": {
+        "nombre_es": "Tiempo de funcionamiento fase 1",
+        "explicacion_es": "Establece el tiempo de funcionamiento de la velocidad 1 en la fase 1, con un rango de 0.0 a 999.9 segundos, seleccionado por F1.35 y con segundos como valor predeterminado."
+    },
+    "F1.25": {
+        "nombre_es": "Tiempo de funcionamiento velocidad 2",
+        "explicacion_es": "Establece el tiempo de funcionamiento de la velocidad 2, seleccionado por F1.35, con un rango de 0.0 a 999.9 segundos."
+    },
+    "F1.26": {
+        "nombre_es": "Tiempo de funcionamiento fase 3",
+        "explicacion_es": "Establece el tiempo de funcionamiento de la velocidad 3 en la fase 3, con un rango de 0 a 999 segundos, seleccionado por F1.35 y con un valor predeterminado en segundos."
+    },
+    "F1.27": {
+        "nombre_es": "Tiempo de funcionamiento en fase 4",
+        "explicacion_es": "Establece el tiempo de funcionamiento en fase 4, con un rango de 0,0 a 999,9 segundos, con incrementos de 0,1 segundos y un valor predeterminado de 10,0 segundos."
+    },
+    "F1.28": {
+        "nombre_es": "Tiempo de arranque de fase",
+        "explicacion_es": "Establece el tiempo que tarda en arrancar la fase del variador de frecuencia, con un rango de 0 a 999.9 segundos."
+    },
+    "F1.29": {
+        "nombre_es": "Tiempo de ejecución de fase",
+        "explicacion_es": "Establece el tiempo de ejecución de la fase en el variador de frecuencia, con un rango de 0.0 a 999.9 segundos y un valor por defecto de 10.0 segundos."
+    },
+    "F1.31": {
+        "nombre_es": "Tiempo de desaceleración",
+        "explicacion_es": "Establece el tiempo de desaceleración del variador de frecuencia, permitiendo ajustar el tiempo que tarda en reducir la velocidad desde un valor máximo hasta cero, con un rango de ajuste de 0 a 10000."
+    },
+    "F2.01": {
+        "nombre_es": "Límite inferior de tensión de entrada",
+        "explicacion_es": "Establece el límite inferior de tensión de entrada del variador, con un rango de 0.00 a un valor configurable, en volts."
+    },
+    "F2.02": {
+        "nombre_es": "Límites de Al",
+        "explicacion_es": "Establece los límites superior e inferior de la señal de entrada analógica Al, correspondiente al 0% y 100% de la escala."
+    },
+    "F2.03": {
+        "nombre_es": "Límite superior de Alis",
+        "explicacion_es": "Establece el límite superior de frecuencia para la función de Alis, que permite ajustar la frecuencia de operación dentro de un rango específico, en este caso desde F0.05 hasta 100 Hz con un ajuste del 0%."
+    },
+    "F2.07": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 inicie el arranque del motor, permitiendo una secuencia de arranque controlada y segura."
+    },
+    "F2.08": {
+        "nombre_es": "Tiempo de supresión de ruido",
+        "explicacion_es": "Este parámetro ajusta el tiempo de supresión de ruido en el panel de simulación del potenciómetro de entrada para eliminar la influencia de interferencias, con un rango de 0,1 a 5,0 segundos y un valor predeterminado de 0,1 segundos."
+    },
+    "F2.09": {
+        "nombre_es": "Desviación de estabilización",
+        "explicacion_es": "Establece la desviación permitida para la estabilización de la frecuencia, con un rango de 0,00 a 0,10V y un valor predeterminado de 0,00V"
+    },
+    "F2.13": {
+        "nombre_es": "Tiempo de rampa de parada",
+        "explicacion_es": "Establece el tiempo que tarda el variador en reducir la velocidad hasta detener el motor, el valor se ajusta en segundos."
+    },
+    "F2.14": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 inicie el arranque del motor, permitiendo una secuencia de arranque controlada y segura."
+    },
+    "F2.15": {
+        "nombre_es": "Tiempo de retardo de parada",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 detenga el motor, permite ajustar el tiempo de frenado del motor."
+    },
+    "F2.16": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 inicie el arranque del motor, permitiendo una secuencia de arranque controlada y segura."
+    },
+    "F2.17": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 inicie el arranque del motor, permitiendo una secuencia de encendido controlada y segura."
+    },
+    "F2.18": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 comience a arrancar el motor, permitiendo una secuencia de arranque controlada y segura."
+    },
+    "F2.19": {
+        "nombre_es": "Tiempo de retardo de parada",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia pare el motor, permite controlar la velocidad de parada del motor."
+    },
+    "F2.21": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 inicie el arranque del motor, permitiendo una secuencia de arranque controlada y segura."
+    },
+    "F2.22": {
+        "nombre_es": "Retardo de cierre R",
+        "explicacion_es": "Es el retardo que ocurre cuando el estado del relé R cambia, permitiendo controlar el tiempo de respuesta del variador de frecuencia. Esto ayuda a evitar cambios bruscos en la operación del equipo."
+    },
+    "F2.23": {
+        "nombre_es": "Retardo de desconexión R",
+        "explicacion_es": "Tiempo de retardo después de la desconexión de la resistencia R, permite controlar el tiempo de espera antes de que el variador de frecuencia realice una acción específica."
+    },
+    "F2.24": {
+        "nombre_es": "Ancho de detección de amplitud",
+        "explicacion_es": "Establece el ancho de detección de amplitud de la frecuencia configurada, con un rango de 0Hz a 15.0Hz. Permite ajustar la sensibilidad de la detección de amplitud en el variador de frecuencia SU-600."
+    },
+    "F2.25": {
+        "nombre_es": "Punto de ajuste de nivel FDT",
+        "explicacion_es": "Establece el punto de ajuste de nivel de la señal de salida del variador de frecuencia, con un rango de 0 a 10 Hz."
+    },
+    "F2.27": {
+        "nombre_es": "Retraso FDT en terminales",
+        "explicacion_es": "Valores de retraso en la terminal FDT, que incluye las terminales UP/DOWN y el rango 0.1Hz~99.9HZ/S, relacionado con la tasa de cambio de frecuencia."
+    },
+    "F2.29": {
+        "nombre_es": "Terminal Xi inválido",
+        "explicacion_es": "La terminal Xi (X1~X4) y el extremo común no son válidos, con un valor de 0~FH. Esto puede indicar un problema de configuración o conexión en el variador de frecuencia."
+    },
+    "F2.32": {
+        "nombre_es": "Coeficiente de filtrado X3",
+        "explicacion_es": "Este parámetro ajusta el coeficiente de filtrado para mejorar la estabilidad y reducir las vibraciones, con un rango de ajuste de 0 a 9999."
+    },
+    "F2.33": {
+        "nombre_es": "Coeficiente de filtro Xé 1",
+        "explicacion_es": "Representa unidades de tiempo de exploración de 2MS, con un rango de 0 a 9999. Este parámetro se utiliza para ajustar el filtro del variador de frecuencia."
+    },
+    "F2.34": {
+        "nombre_es": "Mantener valor",
+        "explicacion_es": "Mantiene el valor actual cuando se restablece el variador, con un valor de 0"
+    },
+    "F2.35": {
+        "nombre_es": "Tiempo de retardo de apagado",
+        "explicacion_es": "Es el tiempo que tarda el convertidor de frecuencia en detenerse después de recibir la señal de apagado, ajustable entre 0.0 y 60 segundos."
+    },
+    "F3.00": {
+        "nombre_es": "Tiempo de rampa de parada",
+        "explicacion_es": "Establece el tiempo que tarda el variador en detener el motor, permitiendo una parada suave y controlada. El valor se refiere al tiempo de rampa de parada en segundos o porcentajes de la velocidad nominal."
+    },
+    "F3.01": {
+        "nombre_es": "Código de función",
+        "explicacion_es": "Este parámetro se refiere al código de función F3.01 del variador de frecuencia SU-600, que define una función específica del dispositivo. Su valor determina la operación o comportamiento del variador en un contexto particular."
+    },
+    "F3.14": {
+        "nombre_es": "Rango de retardo de sueño",
+        "explicacion_es": "Establece el rango del valor de F3.14 y mantiene el tiempo de retardo de sueño, permitiendo controlar el tiempo de inactividad antes de que el variador de frecuencia entre en modo de sueño."
+    },
+    "F3.18": {
+        "nombre_es": "Consistencia con la unidad",
+        "explicacion_es": "Este parámetro garantiza que el variador de frecuencia SU-600 opere de manera consistente con la unidad configurada en F3.18, asegurando una operación estable y precisa."
+    },
+    "F3.02": {
+        "nombre_es": "Tiempo de retardo de arranque",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 inicie el arranque del motor, permitiendo una secuencia de arranque controlada y segura."
+    },
+    "F3.03": {
+        "nombre_es": "Tiempo de aceleración",
+        "explicacion_es": "Establece el tiempo que tarda el variador en alcanzar la velocidad de salida deseada desde la velocidad de parada, permitiendo controlar la aceleración del motor."
+    },
+    "F3.05": {
+        "nombre_es": "Tiempo de retardo de parada",
+        "explicacion_es": "Establece el tiempo que transcurre antes de que el variador de frecuencia SU-600 detenga el motor después de recibir la señal de parada, permitiendo un frenado suave y controlado."
+    },
+    "F3.07": {
+        "nombre_es": "Cuantificación",
+        "explicacion_es": "Esta función se refiere a la cantidad de realimentación dentro del rango del 0.0% al -20.0%, lo que permite ajustar la precisión del control del variador de frecuencia."
+    },
+    "F3.10": {
+        "nombre_es": "Coeficiente de válvula de sueño",
+        "explicacion_es": "Este parámetro ajusta el coeficiente de la válvula de sueño durante la operación a velocidad cero después del tiempo de espera de retraso, con un rango de 0 a 150 y un valor por defecto del 100%."
+    },
+    "F3.12": {
+        "nombre_es": "Porcentaje de valor",
+        "explicacion_es": "Este valor representa un porcentaje definido por F3.12, que se utiliza para calcular una proporción específica en el variador de frecuencia SU-600."
+    },
+    "F3.13": {
+        "nombre_es": "Coeficiente de valor de válvula de despertar",
+        "explicacion_es": "Define el coeficiente de valor de la válvula de despertar como porcentaje del PID 0, con un rango de 0 a 150 y valores predeterminados de 90 y 0 por ciento."
+    },
+    "F3.15": {
+        "nombre_es": "Tiempo de retardo de detección de tubo",
+        "explicacion_es": "Establece el tiempo de retardo para detectar la explosión del tubo, ajustable entre 0.0 y 130.0 segundos. Este parámetro controla el tiempo que el variador de frecuencia espera antes de detectar una explosión de tubo."
+    },
+    "F4.03": {
+        "nombre_es": "valor del motor",
+        "explicacion_es": "Establece el valor de la velocidad del motor, relacionado con el parámetro F3, y se configura en el menú F4.03 del variador de frecuencia SU-600."
+    },
+    "F4.00": {
+        "nombre_es": "Rotores en paralelo",
+        "explicacion_es": "Configura el porcentaje de velocidad para rotores en paralelo, en este caso 75% de la velocidad nominal del motor."
+    },
+    "F4.01": {
+        "nombre_es": "Tensión nominal del motor",
+        "explicacion_es": "Indica que el motor está calificado para una tensión nominal X, lo que significa que está diseñado para funcionar de manera óptima a ese nivel de voltaje."
+    },
+    "F4.09": {
+        "nombre_es": "Tiempo de reinicio automático de fallas",
+        "explicacion_es": "Establece el tiempo de intervalo para el reinicio automático de fallas, que puede variar entre 0.5 y 25.0 segundos, con un valor predeterminado de 3.0 segundos."
+    },
+    "F4.17": {
+        "nombre_es": "Resistencia del estator",
+        "explicacion_es": "Configuración del modelo para establecer la resistencia del estator del motor, con un rango de 0.00 a 200.00 ohmios."
+    },
+    "F4.18": {
+        "nombre_es": "Resistencia del rotor",
+        "explicacion_es": "Configuración del valor de resistencia del rotor del motor después de cambiar la potencia nominal del motor, con un rango de 0.00 a 200.00 y unidad de medida Q."
+    },
+    "F4.02": {
+        "nombre_es": "Parámetros automáticos",
+        "explicacion_es": "Los parámetros F4.02, F4.04, F4.05, F4.18 a F4.20 se configuran automáticamente en el variador de frecuencia SU-600."
+    },
+    "F4.19": {
+        "nombre_es": "Sentido mutuo del rotor fijo",
+        "explicacion_es": "Configuración del modelo para el sentido mutuo del rotor fijo, con un rango de 0.00 a 200.00 milihenrios, relacionado con la potencia correspondiente."
+    },
+    "F4.21": {
+        "nombre_es": "Ganancia proporcional",
+        "explicacion_es": "Ajusta la ganancia proporcional del variador de frecuencia, con un rango de 1 a 100 y un valor predeterminado de 30, para controlar la respuesta del sistema."
+    },
+    "F4.25": {
+        "nombre_es": "Tiempo de integración",
+        "explicacion_es": "Establece el tiempo de integración del variador de frecuencia, ajustable entre 0.01 y 10.00 segundos con un valor predeterminado de 1.00 segundo."
+    },
+    "F4.29": {
+        "nombre_es": "Mantener valor",
+        "explicacion_es": "Permite mantener el valor actual del parámetro cuando se reinicia el variador de frecuencia, el valor por defecto es 0."
+    },
+    "F4.33": {
+        "nombre_es": "Frecuencia de salida",
+        "explicacion_es": "Establece la frecuencia de salida del variador, con un rango de 0.0 a 3200.0 Hz y un valor predeterminado de 50.0 Hz"
+    },
+    "F4.35": {
+        "nombre_es": "Tiempo de subida y bajada de par",
+        "explicacion_es": "Define el tiempo que tarda el variador en subir o bajar el par, ajustable entre 0,00 y 1,00 segundos."
+    },
+    "F4.36": {
+        "nombre_es": "Tiempo máximo de caída de par",
+        "explicacion_es": "Establece el tiempo máximo permitido para que el par disminuya a 0, con un rango de ajuste de 0,00 a 1,00 segundos, con un valor predeterminado de 0,00 segundos."
+    },
+    "F5.00": {
+        "nombre_es": "Ajustes de Protección",
+        "explicacion_es": "Configura la acción de protección y apagado libre, con un rango de 0000 a 1211 y valor por defecto 0001."
+    },
+    "F5.02": {
+        "nombre_es": "Nivel de protección por bajo voltaje",
+        "explicacion_es": "Establece el nivel de voltaje mínimo permitido para proteger el variador de frecuencia contra bajadas de tensión, con un rango de 50-280/50-480V o 180/360V. Este parámetro ayuda a prevenir daños al equipo en caso de fluctuaciones de voltaje."
+    },
+    "F5.03": {
+        "nombre_es": "Factor de supresión de sobretensión",
+        "explicacion_es": "Este parámetro ajusta el factor del inversor para suprimir la sobretensión durante la desaceleración, con un rango de 0 a 255, donde 0 es 9% y el resto es 1X."
+    },
+    "F5.06": {
+        "nombre_es": "Coeficiente de supresión de desbordamiento",
+        "explicacion_es": "Este parámetro ajusta el coeficiente del convertidor de frecuencia para suprimir el desbordamiento cuando el valor es 0, con un rango de ajuste de 0 a 10."
+    },
+    "F5.10": {
+        "nombre_es": "Alarma de sobrecarga del Frequter",
+        "explicacion_es": "Acción de alarma de previsión de sobrecarga del Frequter como porcentaje relativo a la potencia nominal, ajustable entre 0 y 150%, con un valor predeterminado del 120%."
+    },
+    "F5.11": {
+        "nombre_es": "Periodo de frecuencia",
+        "explicacion_es": "Establece el período de frecuencia entre 0,0 y 15,0 segundos, con un valor predeterminado de 5,0 segundos."
+    },
+    "F5.13": {
+        "nombre_es": "Oscilaciones",
+        "explicacion_es": "Este parámetro ajusta el rango de oscilaciones permitidas, desde 0 hasta 200, con un valor predeterminado de 30. Regula la estabilidad y el control de la frecuencia de salida del variador."
+    },
+    "F5.16": {
+        "nombre_es": "Frecuencia de supresión",
+        "explicacion_es": "Establece la frecuencia de supresión para situaciones específicas, con un rango de 0.0 a 5.0 Hz, configurado a través de los parámetros F5.13 a F5.16."
+    },
+    "F5.15": {
+        "nombre_es": "Supresión oscilatoria",
+        "explicacion_es": "Controla la supresión de oscilaciones en el variador de frecuencia, permitiendo ajustar el rango de supresión entre 1 y un valor máximo. Esto ayuda a reducir las vibraciones y mejorar la estabilidad del sistema."
+    },
+    "F5.18": {
+        "nombre_es": "protección de fase inválida",
+        "explicacion_es": "La protección de fase no es válida cuando el parámetro F5.18 está configurado en 0.0, lo que puede afectar la seguridad y el funcionamiento del variador de frecuencia."
+    },
+    "F5.19": {
+        "nombre_es": "caída instantánea de potencia",
+        "explicacion_es": "Configura el coeficiente de caída de frecuencia por caída instantánea de potencia, expresado como un porcentaje. Este parámetro permite ajustar la respuesta del variador de frecuencia ante caídas repentinas de potencia."
+    },
+    "F5.21": {
+        "nombre_es": "Inversión de sentido",
+        "explicacion_es": "Este parámetro controla la inversión del sentido de giro del motor, permitiendo cambiar la dirección de rotación entre horario y antihorario, con valores de 0 para no invertir y 1 para invertir."
+    },
+    "F7.01": {
+        "nombre_es": "Valor de reinicio del contador",
+        "explicacion_es": "Establece el valor de reinicio del contador, que puede variar entre el valor establecido en F7.02 y 9999, con un valor predeterminado de 1."
+    },
+    "F7.02": {
+        "nombre_es": "Configuración de detección de contador",
+        "explicacion_es": "Establece el valor de detección del contador entre 0 y el valor configurado en F7.01, con un valor de 1 como unidad"
+    },
+    "F7.03": {
+        "nombre_es": "Ajuste de tiempo de cronograma",
+        "explicacion_es": "Establece el tiempo de temporización entre 0 y 9999 segundos, permitiendo controlar el cronograma de operación del variador de frecuencia."
+    },
+    "F7.04": {
+        "nombre_es": "Tiempo de retardo de parada",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 detenga el motor, permitiendo una parada más suave y controlada. Esto ayuda a prevenir daños en el motor y en la carga conectada."
+    },
+    "F7.07": {
+        "nombre_es": "Tiempo de retardo de parada",
+        "explicacion_es": "Establece el tiempo de retardo antes de que el variador de frecuencia SU-600 detenga el motor, permite controlar la velocidad de parada del motor."
+    },
+    "F7.08": {
+        "nombre_es": "Control de frecuencia de salto",
+        "explicacion_es": "Este parámetro controla si se permite o no el salto de frecuencia, permitiendo así evitar saltos no deseados en la frecuencia de operación del variador. El valor puede variar entre 0 y 1."
+    },
+    "F7.09": {
+        "nombre_es": "Cambio de balanceo",
+        "explicacion_es": "Este parámetro controla el cambio en el balanceo del variador de frecuencia, con un rango de ajuste de 0 a 1, siendo 0 el valor predeterminado."
+    },
+    "F7.11": {
+        "nombre_es": "Amplitud de frecuencia relativa",
+        "explicacion_es": "Este parámetro ajusta la amplitud de la frecuencia en relación con la frecuencia de salida máxima, con un rango del 0% al 100%. Regula la frecuencia de salida en porcentaje respecto al valor máximo establecido en F0.04."
+    },
+    "F7.12": {
+        "nombre_es": "Rango de salto de frecuencia",
+        "explicacion_es": "Establece el rango de frecuencia en el que se produce un aumento rápido después de que la frecuencia alcance un valor determinado, con un rango de 0 a 50 y un valor por defecto del 0%."
+    },
+    "F7.13": {
+        "nombre_es": "Tiempo de subida de frecuencia",
+        "explicacion_es": "Es el tiempo que tarda en subir la frecuencia de swing, ajustable entre 0.1 y 3600 segundos. Este parámetro controla la velocidad a la que se ajusta la frecuencia del variador."
+    },
+    "F7.14": {
+        "nombre_es": "Frecuencia de balanceo inferior",
+        "explicacion_es": "Establece la frecuencia de balanceo inferior del variador, con un rango de 0,1 a 3600 Hz y un valor predeterminado de 5,0 Hz."
+    },
+    "F7.15": {
+        "nombre_es": "Retardo de frecuencia límite superior",
+        "explicacion_es": "Establece el retardo en segundos antes de alcanzar la frecuencia límite superior, con un rango de 0 a 3600 segundos. El valor se ajusta en intervalos de 0.1 segundos."
+    },
+    "F7.16": {
+        "nombre_es": "Retardo de frecuencia inferior inferior",
+        "explicacion_es": "Tiempo de retardo cuando la frecuencia cae por debajo de un umbral establecido, ajustable entre 0 y 3600 segundos con un valor predeterminado de 0 segundos y un paso de 5.0."
+    },
+    "F8.00": {
+        "nombre_es": "Selección de tensión de salida",
+        "explicacion_es": "Permite seleccionar la tensión de salida del variador de frecuencia, por ejemplo F8.00=2. Esto configura el valor de la tensión de salida según sea necesario."
+    },
+    "F8.02": {
+        "nombre_es": "Corriente de salida",
+        "explicacion_es": "Selecciona la corriente de salida, por ejemplo F8.02=4 para seleccionar la corriente de salida (d-02)."
+    },
+    "F8.03": {
+        "nombre_es": "Selección de tensión de bus",
+        "explicacion_es": "Permite seleccionar la tensión de bus, por ejemplo, F8.03=3 selecciona la tensión de bus (d-03)."
+    },
+    "F8.01": {
+        "nombre_es": "Configuración de señal de referencia",
+        "explicacion_es": "Configura la conexión de la señal de referencia para el variador de frecuencia, conectando un cable a la línea de señal de referencia AT y el otro a 10V, con valores preestablecidos F8.01=11 y F8.02=10."
+    },
+    "F0.19": {
+        "nombre_es": "Frecuencia base",
+        "explicacion_es": "Establece la frecuencia base del variador, con un rango de F1 a TF3 y un valor de 25.0 Hz."
+    },
+    "F2.12": {
+        "nombre_es": "Límite superior de salida A0",
+        "explicacion_es": "Establece el límite máximo de corriente de salida para la salida A0, con un rango de 0,00 a 20,00 mA y una tensión de 10,00 V."
+    },
+    "F2.26": {
+        "nombre_es": "Retardo FDT",
+        "explicacion_es": "Configura el retardo de la función FDT, con valores entre 0 y 30 Hz, en pasos de 1 Hz, siendo mayor que 0."
+    },
+    "F0.10": {
+        "nombre_es": "Aceleración a frecuencia cero",
+        "explicacion_es": "Define la aceleración desde la frecuencia cero hasta la salida máxima, controlando la velocidad a la que se alcanza la frecuencia máxima de salida."
+    },
+    "F2.10": {
+        "nombre_es": "Función de terminal de salida",
+        "explicacion_es": "Define la función del terminal de salida, en este caso la tensión de salida varía entre 0 y 5 voltios. Esta configuración se utiliza para controlar la salida del variador de frecuencia."
+    },
+    "F4.32": {
+        "nombre_es": "Número de par",
+        "explicacion_es": "El número de par se refiere al par nominal del variador de frecuencia, expresado en función de la corriente nominal de 150,0 A."
+    },
+    "F9.00": {
+        "nombre_es": "Configuración del fabricante",
+        "explicacion_es": "Parámetro que permite ajustar la configuración predeterminada del fabricante, con valores que van desde F9.00 hasta F9.10, para personalizar el funcionamiento del variador de frecuencia según las necesidades específicas del usuario."
+    }
+}

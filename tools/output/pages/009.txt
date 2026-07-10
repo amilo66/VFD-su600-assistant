@@ -1,0 +1,27 @@
+b. Form size of the whole machine
+
+=
+
+- D . W1
+S X — \E — n JT i
+— = &) f
+\ Yol p ‘ E & i L
+
+) { — L | 920
+g — | H1][ta
+= =
+
+H2
+
+H2 W1 H H1 w D nluunﬁng
+model (mm) (mm) (mm) (mm) (mm) (mm) hole
+installation size Peripheral dimensions (mm)
+0.4KW-2.2KW 136.5 63 147 142 72 118.4 4
+3. 7KW-5.5KW 172.5 78 185 182 87 138 4
+
+3.3 Basic operation wiring
+
+The frequency converter wiring part is divided into the main circuit and the control
+circuit. The user can open the lid of the output / input terminal to see the main loop
+terminal and the control loop terminal, and the user must connect correctly according to
+the wiring circuit below.

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "F0",
+        "titulo": "Configuración básica",
+        "descripcion": "Frecuencia, tensión y datos del motor"
+    },
+    {
+        "id": "F1",
+        "titulo": "Control de marcha",
+        "descripcion": "Arranque, parada y rampas"
+    },
+    {
+        "id": "F2",
+        "titulo": "Entradas digitales",
+        "descripcion": "Configuración de bornes de entrada"
+    },
+    {
+        "id": "F3",
+        "titulo": "Salidas digitales",
+        "descripcion": "Relés y salidas programables"
+    },
+    {
+        "id": "F4",
+        "titulo": "Entradas y salidas analógicas",
+        "descripcion": "AI y AO"
+    },
+    {
+        "id": "F5",
+        "titulo": "Velocidades múltiples",
+        "descripcion": "Frecuencias predefinidas"
+    },
+    {
+        "id": "F6",
+        "titulo": "Protecciones",
+        "descripcion": "Protección del motor y del variador"
+    },
+    {
+        "id": "F7",
+        "titulo": "PID",
+        "descripcion": "Control PID"
+    },
+    {
+        "id": "F8",
+        "titulo": "Comunicación",
+        "descripcion": "Modbus y parámetros de comunicación"
+    },
+    {
+        "id": "F9",
+        "titulo": "Funciones avanzadas",
+        "descripcion": "Funciones especiales"
+    },
+    {
+        "id": "FA",
+        "titulo": "Ajustes de fábrica",
+        "descripcion": "Configuraciones del sistema"
+    }
+]

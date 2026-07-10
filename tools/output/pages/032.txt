@@ -1,0 +1,71 @@
+Group E-The fault code
+
+fault code name Possible cause of failure trouble shooting ﬁg(rlrfe
+The acceleration time is too short Extend the acceleration time
+EOC1 Overﬂqw in the accelerated The frequency converter power is too small Choose the frequency converter with a 1
+operation large power leve
+Improper V / F curve or torque lift setting Adjust the V/F curve or the torque lift
+amount
+. The deceleration time is too short Extend the deceleration time
+. Overcurrent during the
+EOC2 | deceleration operation The £ . st 1 Choose the frequency converter with a 2
+e frequency converter power is too sma large power level
+The voltage of the grid is low Check input power
+Overflow during running at a ) e . Check the load or reduce the load for
+EOC3 constant speed Mutations or abnormalities occurred in the load mutations 3
+The frequency converter power is too small Choose the frequency converter with a
+large power level
+. . I Ite i heck i
+—-— Overvoltage in the deceleration nput voltage exception Check input power A
+operation Start the motor in rotation Set to start after DC braking
+Overvoltage in the deceleration The deceleration time is too short Extend the deceleration time
+EHUZ eration . . 5
+Input voltage exception Check input power
+Overpressure in running at , : 1
+EHU3 uniform spee Input voltage exception Check input power 6
+EHU4 Overpressure during shutdown Input voltage exception Check the power voltage
+P g p g P p g
+Und ; rati Input voltage is ab 1 or the relay is not d Check the power supply voltage or seek
+ELUO nder pressure in operation nput voltage is abnormal or the relay is not engage the service from the . 8
+Frequter output short circuit or grounding Check motor wiring
+Frequency converter i t See rfl
+ESC1 Under pressure in operation 9
+The control board is abnormal or seriously disturbed Seek for services from the manufacturer
+Power device damage Seek for services from the manufacturer
+The ambient temperature is too high Reduce ambient temperature
+E-OH Radiator overheating Fan damage Change the fan 10
+The air duct is blocked Unclog the air duct
+Improper V / F curve or torque lift setting Adjust the V / F curve and the torque lift
+amount
+The power grid voltage is too low Check the power grid voltage
+EOL1 Frequency converter overload 11
+The acceleration time is too short Extend the acceleration time
+The motor load is heavy Choose a larger power frequency converter
+Improper V / F curve or torque lift setting Adjust the V/ F curve and the torque lift
+amount
+The power grid voltage is too low Check the power grid voltage
+EOL2 Motor overload - — 12
+Motor blocking rotation or load mutation is too large Check the load
+Motor overload protection factor is not set correctly Set the motor overload protection factor
+correctly
+Disconnect the external equipment fault
+E-EF External equipment failure External equipment fault input terminal is closed input terminal and clear the fault (note the 13
+check cause
+EPOF Dual CPU communication failure | A CPU communication failure Seek for services from the manufacturer 14
+The PID feedback line is loose Check feedback connection
+EPID PID feedback disconnection - - - 15
+The feedback amount is less than the disconnection Adjust the test input threshold value
+detection value
+Does not match the upper machine port rate Adjust the Porter rate
+Check whether the communication line is
+E485 A RS485 communication failure And RS485 channel interference shielded, whether the wiring is reasonable, 16
+and if necessary, consider and connect the
+filter capacitor
+Communication timeout retry
+ETUN Motor tuning fault Motor parameter is set wrong Reset the motor parameters 17
+Current sampling circuit fault
+ECCF Current detection failure Seek for services from the manufacturer 18
+Auxiliary power failure
+
+28
+

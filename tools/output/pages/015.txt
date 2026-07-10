@@ -1,0 +1,48 @@
+CRC CHK High 5CH
+
+This section of data analysis:
+
+01H is the frequency converter address
+
+03H is the read function code
+
+04H is the product of the read item * 2
+
+1770H is the data to read 2102H (set frequency)
+
+0000H is the data that is read at 2103H (output frequency)
+The 5 CFEH is the 16-bit CRC check code
+
+6,06H write function mode
+
+I nquiry information frame format (Send frame):
+
+Address 01H
+Function 06H
+20H
+Starting data address
+00H
+00H
+Data(2Byte)
+01H
+CRC CHK Low 43H
+CRC CHK High CAH
+This section of data analysis:
+01H is the frequency converter address
+06H is the write function code
+The 2000H is the control command address
+0001H, for the shutdown command
+43 CAH is the 16-bit CRC test code
+Response information frame format (return frame):
+Address 01H
+Function 06H
+20H
+Starting data address
+00H
+00H
+Number of Data(Byte)
+01H
+CRC CHK Low 43H
+CRC CHK High CAH
+
+Data analysis: If set correctly, return the same input data.

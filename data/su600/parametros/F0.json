@@ -1,0 +1,290 @@
+[
+    {
+        "codigo": "F0.00",
+        "nombre": "Functional macro definition",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "General mode"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Single pump constant pressure water supply mode"
+            },
+            {
+                "valor": "2~3",
+                "descripcion": "Keep"
+            },
+            {
+                "valor": "4",
+                "descripcion": "Engraver machine mode"
+            },
+            {
+                "valor": "5~10",
+                "descripcion": "Hold on"
+            }
+        ],
+        "rango": "0~10",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.01",
+        "nombre": "Motor control mode",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "VF control"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Advanced VF control"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Simple vector control"
+            },
+            {
+                "valor": "3",
+                "descripcion": "Advanced vector control"
+            },
+            {
+                "valor": "4",
+                "descripcion": "Torque control"
+            }
+        ],
+        "rango": "0~4",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.02",
+        "nombre": "Run command channel selection",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Panel runs the command channel"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Terminal run command channel"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Communication running command channel"
+            }
+        ],
+        "rango": "0~2",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.03",
+        "nombre": "Frequency given choice",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Panel potentiometer"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Number given 1, operation panel ▲▼ key adjustment"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Number given 2, terminal UP/DOWN adjustment"
+            },
+            {
+                "valor": "3",
+                "descripcion": "AI simulation given (0~10V/0~20mA)"
+            },
+            {
+                "valor": "4",
+                "descripcion": "Combination given"
+            },
+            {
+                "valor": "5",
+                "descripcion": "Keep"
+            },
+            {
+                "valor": "6",
+                "descripcion": "Communication given"
+            },
+            {
+                "valor": "7",
+                "descripcion": "Keep"
+            }
+        ],
+        "rango": "0~7",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.04",
+        "nombre": "Maximum output frequency",
+        "descripcion": "The maximum output frequency is the highest frequency allowed by the converter and is the benchmark for acceleration and deceleration.",
+        "rango": "MAX{50.0, [F0.05]}~999.9Hz",
+        "fabrica": "50.0Hz",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.05",
+        "nombre": "Upper limiting frequency",
+        "descripcion": "The operating frequency cannot exceed this frequency.",
+        "rango": "MAX{0.1, [F0.06]}~[F0.04]",
+        "fabrica": "50.0Hz",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.06",
+        "nombre": "Lower limit frequency",
+        "descripcion": "The running frequency cannot be below this frequency.",
+        "rango": "0.0~Upper limit frequency",
+        "fabrica": "0.0Hz",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.07",
+        "nombre": "Lower bound frequency reaches the processing",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Zero speed operation"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Operating at lower limit frequency"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Stop"
+            }
+        ],
+        "rango": "0~2",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.08",
+        "nombre": "Run the frequency number setting",
+        "descripcion": "This setpoint is the frequency number given the initial value.",
+        "rango": "0.0~Upper limit frequency",
+        "fabrica": "10.0Hz",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.09",
+        "nombre": "Digital frequency control",
+        "descripcion": "LED single bit: power-out storage. LED ten-place: shutdown maintenance. LED 100 bits: UP/DOWN negative frequency regulation. LED thousand bits: PID, PLC frequency superposition selection.",
+        "rango": "0000~2111",
+        "fabrica": "0000",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.10",
+        "nombre": "Acceleration time",
+        "descripcion": "It takes the time for the inverter to accelerate from the zero frequency to the maximum output frequency.",
+        "rango": "0.1~999.9s",
+        "fabrica": "Model setting",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.11",
+        "nombre": "Deceleration time",
+        "descripcion": "The time required for the inverter to slow down from the maximum output frequency to the zero frequency.",
+        "rango": "0.1~999.9s",
+        "fabrica": "Model setting",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.12",
+        "nombre": "Operation direction setting",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Forward turn"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Reverse"
+            },
+            {
+                "valor": "2",
+                "descripcion": "No reversal"
+            }
+        ],
+        "rango": "0~2",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.13",
+        "nombre": "V/F curve setting",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Linear curve"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Square curve"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Multipoint VF curve"
+            }
+        ],
+        "rango": "0~2",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.14",
+        "nombre": "Recurrent lift",
+        "descripcion": "Manual torque lift which is the percentage relative to the motor voltage.",
+        "rango": "0.0~30.0%",
+        "fabrica": "Model setting",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.15",
+        "nombre": "Torque lift cutoff frequency",
+        "descripcion": "This setting is the lift cut-off frequency point for the manual torque lift.",
+        "rango": "0.0~50.0Hz",
+        "fabrica": "15.0Hz",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.16",
+        "nombre": "The carrier frequency setting",
+        "descripcion": "For the occasion of silent operation, the carrier frequency can be appropriately increased.",
+        "rango": "2.0~16.0kHz",
+        "fabrica": "Model setting",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.23",
+        "nombre": "User password",
+        "descripcion": "Set any non-zero number for 3 minutes or a power failure to take effect.",
+        "rango": "0~9999",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    },
+    {
+        "codigo": "F0.24",
+        "nombre": "Frequency display resolution selection",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "0.1Hz"
+            },
+            {
+                "valor": "1",
+                "descripcion": "1Hz"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 17
+    }
+]

@@ -1,0 +1,336 @@
+SU-600series
+vector frequency converter
+operating specification Manual
+
+Thanks for you selecting and using our SU-600 frequency converter
+products.
+Please read this specification manual carefully before using to use this product
+correctly and safely.
+Please read [safety notices] carefully before using.
+Please keep this manual properly so that it is convenient for you to check and
+read when required. Any questions please contact our customer service staff to ask
+for technical support, our professionals will do best to service for you.
+This operating manual provided the relate information of SU-600 frequency
+converter, the contents include:
+safety notices of frequency converter
+installation and inspection of frequency converter
+wiring instruction of frequency converter
+operation instruction of frequency converter
+all parameters instruction
+communication agreement instruction
+troubleshooting
+
+This operating manual suitable to be consulted by the below operators:
+system design and model select staffs
+installation or wiring staffs
+debugging staffs
+maintain or maintenance staffs
+
+Catalogue
+
+chapter 1 product information
+1.1 Naming rules
+SU-600
+
+1R5
+
+G3
+voltage grade:
+
+ower grade:
+
+model:SU-600
+
+Single Phase 220V into three phase 380V 50HZ/60HZ
+SU600-0R75G1
+
+1.5
+
+3.4
+
+2.5
+
+0.75
+
+SU600-1R5G1
+
+3
+
+5.0
+
+3.7
+
+1.5
+
+2
+
+SU600-2R2G1
+
+4
+
+5.8
+
+5
+
+2.2
+
+3
+
+SU600-3R7G1
+
+5.9
+
+10.5
+
+9
+
+3.7
+
+5
+
+SU600-5R5G1
+
+8.9
+
+14.6
+
+13
+
+5.5
+
+7.5
+10
+
+1
+
+SU600-7R5G1
+
+11
+
+21
+
+17
+
+7.5
+
+SU600-11R0G1
+
+17
+
+26
+
+25
+
+11
+
+15
+
+SU600-15R0G1
+
+21
+
+35
+
+32
+
+15
+
+20
+
+Single Phase 220V into three phase 220V 50HZ/60HZ
+SU600-0R75G2
+
+1.5
+
+8.2
+
+4
+
+0.75
+
+1
+
+SU600-1R5G2
+
+3
+
+14
+
+7
+
+1.5
+
+2
+
+SU600-2R2G2
+
+4
+
+23
+
+9.6
+
+SU600-3R7G2
+
+5.5
+
+31
+
+17
+
+3.7
+
+4
+
+SU600-5R5G2
+
+8.9
+
+26
+
+25
+
+5.5
+
+5
+10
+
+2.2
+
+3
+
+SU600-7R5G2
+
+21
+
+35
+
+32
+
+7.5
+
+SU600-11R0G2
+
+25
+
+50
+
+37.5
+
+11
+
+15
+
+SU600-15R0G2
+
+32
+
+68
+
+40
+
+15
+
+20
+
+Three-phase 380V into three-phase 380V 50HZ/60HZ
+SU600-0R75G3
+
+1.5
+
+3.6
+
+2.5
+
+0.75
+
+SU600-1R5G3
+
+3
+
+5.1
+
+4.1
+
+1.5
+
+2
+
+SU600-2R2G3
+
+4
+
+6
+
+5.8
+
+2.2
+
+3
+
+SU600-3R7G3
+
+6.1
+
+10.5
+
+9
+
+4
+
+5
+
+SU600-5R5G3
+
+8.9
+
+14
+
+13
+
+5.5
+
+7.5
+10
+
+1
+
+SU600-7R5G3
+
+11
+
+21
+
+17
+
+7.5
+
+SU600-11R0G3
+
+17
+
+26
+
+25
+
+11
+
+15
+
+SU600-15R0G3
+
+21
+
+35
+
+32
+
+15
+
+20
+
+motor
+
+LED
+
+

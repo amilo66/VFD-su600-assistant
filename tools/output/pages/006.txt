@@ -1,0 +1,73 @@
+SU-600value vector specification
+
+2. Product technical indicators and specifications
+
+m | Rated voltage, and frequency | Three-phase (G3series) 380V; 50 / 60 HZ Three-phase (G2 series) 220V: 50 / 60 HZ
+p
+o - -
+r Aﬁg)r‘l"éiks’le range of voltage Three-phase (G3 series) 320V ~460V Three-phase (G2 series) 190V~250V
+voltage G3 series; 0~380V G2 series; 0~220V
+o
+u
+t frequenc V / F control, simple vector control: 0.0~999.9HZ
+5 4 ¥ Advanced vector control, torque control: 0.5~300.0HZ
+t
+overload capacity 110% long term 150% 1 min 180% 5s
+control method V / F control, simple vector control, advanced vector control, torque control
+Simulation end input And 0.1% of the maximum output frequency
+Frequency to set the
+resolution Digital setting 0.1HZ
+analog input Within 0.2% of the maximum output frequency
+Frequency accuracy
+digital input Set within 0.01% of the output frequency
+V / F curve (voltage and Three ways: the first is the linear he second is
+g frequency characteristic) the square torque characteristic curve, and the third is the user set V / F curve
+n
+& Manual setting: 0.0~30.0% of the rated output
+o VIF 1 Recurrent ascension Automatic lifting: the lifting torque is automatically determined according
+1 /F contro!
+to the output current and the motor parameters
+c
+h
+a . . . .
+r Automatic current limiting During acceleration, deceleration or stable operation, the stator current and
+g and pressure limiting voltage of the motor are automatically detected and suppressed accordmg to
+t a unique algorithm to minimize the possibility of system fault trip
+e
+r
+i ltage f haracteristi The output pressure frequency ratio is automatically adjusted according to
+s Vvoltage Irequency charaCterisucs | the motor parameters and the unique algorithm
+t
+i
+c
+starting torque
+V/F control Recurrent characteristics 100% Rated torque at 5.0Hz (VF control)
+150% rated torque at 1.0Hz (vector control)
+Current and voltage suppression The whole current closed-loop control, completely avoid current impact,
+with perfect overflow pressure suppression function
+Undervoltage inhibition Especially fot Elsers Wlth low grid Voltage and frequent grid voltage fluctuations, the system can maintain the
+during operation ¢ to unique algorithms and residual energy distribution strategies for
+the longest possﬂ)le operatmg time even Wlthln the allowable voltage range
+Multi-section speed operation The 7-segment programmable multisegment speed control, and multiple operation modes are optional.
+PID control Built-in PID controller (pre-set frequency). Standard configuration of RS485 communication function, a variety
+RS485 Communications of communication protocols are optional, with linkage synchronization control function
+. analog input DC voltage 0~10V, DC current 0 ~ 20 mA (upper and lower limit optional)
+y Frequency setting
+EI’ digital input Operation panel setting, RS485 igterface setting, UP /DOWN terminal
+c control, can also be combined with analog input
+a
+l
+': relay output 1-way relay output (TA, TC), up to 17 meaning choices
+n
+c output signal . . .
+t P & 1 1 analog signal output, the output range is flexibly set between 0-20 mA or
+i analog output 0-10 V, which can realize the output of physical quantities such as set
+g frequency and output frequency
+Automatic voltage According to the need, dynamic pressure, static pressure and unstable pressure can be selected to obtain the
+stabilization operation most stable operation effec
+Add and deceleration 0.15~999.9min Continuous setting can be set
+time setting ) ) 0 ous setling se
+braking dynamic braking| The energy braking starting voltage, return voltage and energy braking rate can be adjusted continuously
+
+2
+

@@ -1,0 +1,258 @@
+[
+    {
+        "codigo": "F4.00",
+        "nombre": "The motor is rated power",
+        "descripcion": "Motor parameter setting.",
+        "rango": "0.0~2000.0kW",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.01",
+        "nombre": "The motor is rated voltage",
+        "descripcion": "Motor parameter setting.",
+        "rango": "0~500V: 380V, 0~250V: 220V",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.02",
+        "nombre": "Rated current of motor",
+        "descripcion": "Motor parameter setting.",
+        "rango": "0.1~999.9A",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.03",
+        "nombre": "Rated frequency of motor",
+        "descripcion": "Motor parameter setting.",
+        "rango": "1.0~999.9Hz",
+        "fabrica": "50.0Hz",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.04",
+        "nombre": "Motor rated speed",
+        "descripcion": "Motor parameter setting.",
+        "rango": "0~9999RPM",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.05",
+        "nombre": "No-load current of motor",
+        "descripcion": "Set the motor.",
+        "rango": "0.1A~[F4.01]",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.06",
+        "nombre": "AVR function",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Invalid"
+            },
+            {
+                "valor": "1",
+                "descripcion": "The whole process is effective"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Invalid only for deceleration"
+            }
+        ],
+        "rango": "0~2",
+        "fabrica": "0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.07",
+        "nombre": "Cooling fan control",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Automatic control mode"
+            },
+            {
+                "valor": "1",
+                "descripcion": "The power-on process is always running"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.08",
+        "nombre": "Number of automatic reset",
+        "descripcion": "When the number of barrier reset is set to 0, there is no automatic reset function.",
+        "rango": "0~10",
+        "fabrica": "0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.09",
+        "nombre": "Automatic fault reset interval time",
+        "descripcion": "Set the fault automatic reset interval time.",
+        "rango": "0.5~25.0s",
+        "fabrica": "3.0s",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.10",
+        "nombre": "Energy consumption brake start voltage",
+        "descripcion": "If the internal DC side voltage of the converter is higher than the energy braking start voltage, the built-in brake unit moves.",
+        "rango": "330~380/660~800V",
+        "fabrica": "350/780V",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.11",
+        "nombre": "Energy consumption braking action ratio",
+        "descripcion": "The voltage energy raised inside the frequency converter will be released through the brake resistance.",
+        "rango": "10~100%",
+        "fabrica": "100%",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.12",
+        "nombre": "Overmodulation function selection",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Invalid"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Valid"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.16",
+        "nombre": "Motor parameters by self-learning",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Invalid"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Static self-learning"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.17",
+        "nombre": "Motor stator resistance",
+        "descripcion": "After changing the rated motor power, parameters are automatically updated.",
+        "rango": "0.00~200.00Ω",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.18",
+        "nombre": "Motor rotor resistance",
+        "descripcion": "After changing the rated motor power, parameters are automatically updated.",
+        "rango": "0.00~200.00Ω",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.19",
+        "nombre": "Motor fixed, rotor mutual sense",
+        "descripcion": "After changing the rated motor power, parameters are automatically updated.",
+        "rango": "0.00~200.00mH",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.20",
+        "nombre": "Motor is set, the rotor leakage sense",
+        "descripcion": "After changing the rated motor power, parameters are automatically updated.",
+        "rango": "0.00~200.00mH",
+        "fabrica": "Model setting",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.21",
+        "nombre": "Speed loop (ASR 1) proportional gain",
+        "descripcion": "Function codes F4.21~F4.26 are valid in the vector control mode.",
+        "rango": "1~100",
+        "fabrica": "30",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.22",
+        "nombre": "The velocity loop (ASR 1) integration time",
+        "descripcion": "Function codes F4.21~F4.26 are valid in the vector control mode.",
+        "rango": "0.01~10.00s",
+        "fabrica": "0.50",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.27",
+        "nombre": "Vector transfer difference compensation",
+        "descripcion": "In the vector control mode, this parameter is used to adjust the speed accuracy of the motor.",
+        "rango": "50%~200%",
+        "fabrica": "100",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.30",
+        "nombre": "Speed loop torque limit",
+        "descripcion": "This set point is the percentage of the rated current of the motor.",
+        "rango": "0.0%~200.0%",
+        "fabrica": "170.0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.32",
+        "nombre": "The torque number is given",
+        "descripcion": "This set point is the percentage of the rated current of the motor.",
+        "rango": "0.0%~200.0%×The rated current of the motor",
+        "fabrica": "150.0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.33",
+        "nombre": "Torque controls the forward maximum frequency",
+        "descripcion": "Used to set the forward or reverse maximum operating frequency under torque control mode.",
+        "rango": "0.0~3200.0Hz",
+        "fabrica": "50.0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.34",
+        "nombre": "Torque control of the reverse maximum frequency",
+        "descripcion": "Used to set the forward or reverse maximum operating frequency under torque control mode.",
+        "rango": "0.0~3200.0Hz",
+        "fabrica": "50.0",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.35",
+        "nombre": "Recurrent up time",
+        "descripcion": "Torque rise/fall time defines the time when the torque rises from 0 to maximum or falls from maximum to 0.",
+        "rango": "0.00~1.00s",
+        "fabrica": "0.00",
+        "pagina_pdf": 23
+    },
+    {
+        "codigo": "F4.36",
+        "nombre": "Torque drop time",
+        "descripcion": "Torque rise/fall time defines the time when the torque rises from 0 to maximum or falls from maximum to 0.",
+        "rango": "0.00~1.00s",
+        "fabrica": "0.00",
+        "pagina_pdf": 23
+    }
+]

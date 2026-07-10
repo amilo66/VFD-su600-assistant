@@ -1,0 +1,71 @@
+This set pomt is the percentage of the rated current
+
+0. 0% ~200. 0% *
+
+F4.32 | The torque number is given of the The rated current of the 150.0 O
+r
+Torque controls the forward
+F4.33 0.0~3200. OHz 50.0 O
+maximum frequency Used to set the forward or reverse maximum operating
+Torque control of the reverse frequency under torque control mode.
+Fa. 34 | o e 0. 0~3200. OHz 50.0 O
+F4.35 | Recurrentup time Torque rise / fall time defines the time when the 0.00~1. 00S 0.00 O
+torque rises from 0 to maximum or falls from
+F4.36 | Torque drop time maximum to 0 0.00~1.00S 0.00 O
+F5 group-protective function parameters
+FC name Set the scope Minimum unit gggﬁgfgy change
+LED single bit: motor overload protection selection
+0: invalid 1: vahd LED ten place: PID feedback line
+break protec
+valid
+1 protectron action and free shutdown LED 100
+bit: 485 communication failure processing
+F5.00 Protection Settings 0: protection action and free shutdown 0000~1211 0001 X
+1 alarm but maintain the status quo operation
+2: alarm and stop in the set way
+LED thousand shock suppression selection
+0: invalid
+1: valid
+The overload protection coefficient of the motor is the
+: percentage of the rated current value of the motor to
+F5. 01 Motor overload protection the rated output current value of the frequency 30%~110% 100% X
+factor converter.
+This functron code specifies the allowable lower limit
+F5.02 Under-pressure protection level | voltage o bus when the frequency converteris | 50~280/50~480V 180/360V X
+working normally.
+Reduced-down voltage limit This parameter is used to adjust the ability of the e N
+F5.03 factor inverter to suppress overvoltage during deceleration. 0: 9% A, 1~255 1 X
+o The overvoltage limit level defines the action voltage 350 ~ 400/660 ~
+F5. 04 Overpressure limit level during the overvoltage stall protection 850V 375/700V X
+Accelerated current limiting This parameter is used to regulate the ability of the e
+F5. 05 coefficient frequency converter to suppress overflow during 0: 3’{ 1, 1~99 10 X
+acceleration.
+it This parameter is used to regulate the ability of the
+Constant-speed current limiting p 8 y s
+F5.06 | coefficient frequency converter to suppress overflow at a 0: XM, 1~10 0 X
+constant speed.
+The current limit level defines the current threshold
+. of the automatic current limiting action, and the set
+F5. 07 Current limit level value is the percentage relative to the rated currentof | 50%6~~200% 160% X
+the converter.
+This value is the percentage of PID. When the feedback
+; value of PID is continuously less than the fee
+F5. 08 gefdl?[ack onlthe brealdine break detection value, the frequency Converter w111 0. 0~100. 0% 0.0% X
+election value make corresponding protectlon action according
+the setting of F5.00, which is invalid when FS.OS:0.0%.
+F5. 09 Feedback break detection ti Delay time before the protection action after the 0.1~999. 95 10.0 X
+cedback break detection time feedback disconnection occurs : . -Us
+The current threshold of the inverter overload forecast
+F5.10 | Frequter overload forecast alarm action is the percentage relative to the rated 0~150% 120% O
+alarm level current of the frequency converter.
+The output current of the inverter ranges from the
+frequency converter overload overload forecast alarm level amplitude (F5.10) to
+F5.11 | peoduency o 0.0~15. 0s 5. 0s X
+
+forecast alarm delay
+
+the delay time between the output overload pre-alarm
+signal.
+
+23
+

@@ -1,0 +1,196 @@
+[
+    {
+        "codigo": "F5.00",
+        "nombre": "Protection Settings",
+        "descripcion": "LED single bit: motor overload protection selection. LED ten place: PID feedback line break protection. LED 100 bit: 485 communication failure processing. LED thousand: shock suppression selection.",
+        "rango": "0000~1211",
+        "fabrica": "0001",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.01",
+        "nombre": "Motor overload protection factor",
+        "descripcion": "The overload protection coefficient of the motor is the percentage of the rated current value of the motor to the rated output current value of the frequency converter.",
+        "rango": "30%~110%",
+        "fabrica": "100%",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.02",
+        "nombre": "Under-pressure protection level",
+        "descripcion": "This function code specifies the allowable lower limit voltage of the DC bus when the frequency converter is working normally.",
+        "rango": "50~280/50~480V",
+        "fabrica": "180/360V",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.03",
+        "nombre": "Reduced-down voltage limit factor",
+        "descripcion": "This parameter is used to adjust the ability of the inverter to suppress overvoltage during deceleration.",
+        "rango": "0: Off, 1~255",
+        "fabrica": "1",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.04",
+        "nombre": "Overpressure limit level",
+        "descripcion": "The overvoltage limit level defines the action voltage during the overvoltage stall protection.",
+        "rango": "350~400/660~850V",
+        "fabrica": "375/700V",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.05",
+        "nombre": "Accelerated current limiting coefficient",
+        "descripcion": "This parameter is used to regulate the ability of the frequency converter to suppress overflow during acceleration.",
+        "rango": "0: Off, 1~99",
+        "fabrica": "10",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.06",
+        "nombre": "Constant-speed current limiting coefficient",
+        "descripcion": "This parameter is used to regulate the ability of the frequency converter to suppress overflow at a constant speed.",
+        "rango": "0: Off, 1~10",
+        "fabrica": "0",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.07",
+        "nombre": "Current limit level",
+        "descripcion": "The current limit level defines the current threshold of the automatic current limiting action.",
+        "rango": "50%~200%",
+        "fabrica": "160%",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.08",
+        "nombre": "Feedback on the break line detection value",
+        "descripcion": "This value is the percentage of PID. When the feedback value of PID is continuously less than the feedback break detection value, the frequency converter will make corresponding protection action.",
+        "rango": "0.0~100.0%",
+        "fabrica": "0.0%",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.09",
+        "nombre": "Feedback break detection time",
+        "descripcion": "Delay time before the protection action after the feedback disconnection occurs.",
+        "rango": "0.1~999.9s",
+        "fabrica": "10.0s",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.10",
+        "nombre": "Frequency converter overload forecast alarm level",
+        "descripcion": "The current threshold of the inverter overload forecast alarm action is the percentage relative to the rated current of the frequency converter.",
+        "rango": "0~150%",
+        "fabrica": "120%",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.11",
+        "nombre": "Frequency converter overload forecast alarm delay",
+        "descripcion": "The output current of the inverter ranges from the overload forecast alarm level amplitude to the delay time between the output overload pre-alarm signal.",
+        "rango": "0.0~15.0s",
+        "fabrica": "5.0s",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.12",
+        "nombre": "Point action priority enables",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Invalid"
+            },
+            {
+                "valor": "1",
+                "descripcion": "When the inverter is running, the highest priority"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "0",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.13",
+        "nombre": "Inhibition coefficient of oscillations",
+        "descripcion": "When the motor shocks, set F5.00 thousand bits effective, open the shock suppression function.",
+        "rango": "0~200",
+        "fabrica": "30",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.14",
+        "nombre": "The amplitude inhibition coefficient",
+        "descripcion": "When the motor shocks, set F5.00 thousand bits effective, open the shock suppression function.",
+        "rango": "0~12",
+        "fabrica": "5",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.15",
+        "nombre": "The lower limit of the oscillation suppression frequency",
+        "descripcion": "When the motor shocks, set F5.00 thousand bits effective, open the shock suppression function.",
+        "rango": "0.0~[F5.16]",
+        "fabrica": "5.0Hz",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.16",
+        "nombre": "Oscillatory suppression at the ceiling frequency",
+        "descripcion": "When the motor shocks, set F5.00 thousand bits effective, open the shock suppression function.",
+        "rango": "[F5.15]~[F0.05]",
+        "fabrica": "45.0Hz",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.17",
+        "nombre": "Wave-by-wave flow restriction selection",
+        "descripcion": "LED bits: Select 0 in acceleration: Invalid, 1: valid. LED ten: select 0 in deceleration: Invalid, 1: valid. LED 100 bits: selected from the constant speed: 0: Invalid, 1: valid. LED thousand bits: dead area compensation selection: 0: Invalid, 1: valid.",
+        "rango": "000~1111",
+        "fabrica": "1011",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.18",
+        "nombre": "Output is missing the phase protection detection factor",
+        "descripcion": "When the ratio of maximum and minimum value in three-phase output current is greater than this coefficient and the duration exceeds 6 seconds, the inverter reports the output current imbalance fault EPLI.",
+        "rango": "0.00~20.00",
+        "fabrica": "2.00",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.19",
+        "nombre": "The decrease coefficient of the instantaneous power drop frequency",
+        "descripcion": "Set the instantaneous drop frequency drop coefficient.",
+        "rango": "0: Function invalid, 1~9999",
+        "fabrica": "0",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.20",
+        "nombre": "Instant power drop frequency point",
+        "descripcion": "Set the instantaneous power drop frequency drop point.",
+        "rango": "220V: 180~330V/250V, 380V: 300~550V/450V",
+        "fabrica": "Model setting",
+        "pagina_pdf": 25
+    },
+    {
+        "codigo": "F5.21",
+        "nombre": "Low-frequency carrier is used for automatic adjustment",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Invalid"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Valid"
+            }
+        ],
+        "rango": "0~1",
+        "fabrica": "1",
+        "pagina_pdf": 25
+    }
+]

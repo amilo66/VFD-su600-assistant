@@ -1,0 +1,71 @@
+d-07 continue to have - 0 0 <
+d-08 | ot o 0 Ay | 0- 00~10. 00V/0. 00~20. 00mA 0. 01V/0. 01mA 0.00V/mA | #
+d-09 continue to have — - 0 *
+, 0.00V/(M
+d-10 | The PID pressure settingvalue | 0. 00~10. 00V/0. 00~99. 99 (MPa. Kg) 0.01V/ (MPa. Kg) Pa. Kg) *
+a. Kg
+0. 00V/ (M
+d-11 The PID pressure feedback value | 0. 00~10. 00V/0. 00~99. 99 (MPa. Kg) 0.01V/ (MPa. Kg) Pa. Kg) L 2
+a. Kg
+d-12 Current gauge values 0~9999s Is 0s *
+d-13 Current time value (s) 0~9999s 1s 0s <
+d-14 Input terminal status (X1-X4) 0~FH 1H OH L 2
+d-15 | output state (R) 0~1H 1H OH L 4
+d-16 The module temperature is at (°C) | 0. 0~132. 3°C 0.1C 0.0 L 2
+d-17 Software Upgrade Date (year) 2010~2026 1 2023 L 2
+d-18  [Gommine jupgrade date 0~1231 1 0109 .
+d-19 |The second fault code 0~19 1 0 <
+d-20 |Lastrecent fault code 0~19 1 0 ¢
+Output f; (Hz)
+d=21 |t tho latost failine 0. 0~999. 9z 0. 1Hz 0. OHz *
+422 |peppeareptatthe 0. 0~999. 9A 0. 1A 0.0V *
+d-23  |Bus voltage at the last fault (V) 0~999V 1v ov L 4
+he module temperature is 56 oo o o
+
+d=24  [(o) at the latest failure 0.0~132.3C 0.1C 0.0C 2
+425 [ofihe requency comerter () | 0~~9999h Ih Oh .
+
+0~FFFF H
+
+BIT 0: operation / downtime
+
+BIT 1: reverse / forward turn
+
+BIT 2: click on it
+
+BIT 3: DC brake
+
+BIT 4: reserved
+
+BIT 5: Overvoltage limit
+
+BIT 6: constant speed and frequency reduction
+d-26 Frequency converter state BIT 7: Overflow limit 1H oH *
+
+BIT 8 ~ 9:00-zero speed / 01-acceleration /
+
+10-deceleration / 11-uniform speed
+
+BIT 10: Overload forecast alarm
+
+BIT 11: reserved
+
+BIT 12 ~ 13 Run command channel: 00-panel
+
+/ 01-terminal / 10-reserved
+
+BIT 14 ~ 15 Bus voltage status: 00-normal
+
+/ 01-LV protection / 10-overvoltage protection
+d-27 |software release 1. 00~99. 99 0.01 2.00 L 4
+d-28 Power model 0. 10~99. 9KW 0. 01KW Model setting L 4
+
+0.0~ Maximum output frequency [F0.04]
+d-29 Motor estimation frequency Note: Motor operating frequency converted 0. 1Hz 0. OHz <
+
+from the motor estimated speed
+d-30 |output torque -200~+200% 1% 0% L 2
+d-31  |inputvoltage (V) 0~999V v ov .
+
+27
+

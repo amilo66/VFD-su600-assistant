@@ -1,0 +1,115 @@
+F3.00
+
+The PID function setting
+
+LED single bit: PID adjusting property
+0: Invalid
+
+1: Positive effect
+When the feedback signal is greater than the PID,
+the inverter output frequency is required to decrease
+(i. e., reduce the feedback signal).
+
+2: Negative effect
+
+When the feedback signal is greater than the PID, the
+inverter output frequency is required to increase
+
+(i. e., reduce the feedback signal).
+
+LED ten place: PID to the quantitative input channel
+0: The keyboard potentiometer
+
+PID to quantification is given by the potentiator on
+the operator panel.
+
+1: Number given
+
+The PID ration is given by the number and set by the
+function code F3.01.
+
+2: Pressure given (MPa, Kg)
+
+Set the given pressure by setting F3.01, F3.18.
+
+LED 100 bits: PID feedback quantity input channel
+0: AL
+
+1: Keep
+
+LED thousand bits: PID Sleep selection
+
+0: not valid
+
+1: Ordinary dormancy
+
+F 3.10 to F 3.13.2: Perturbation dormancy
+
+The same parameter setting as the dormancy mode
+selection 0, if the PID feedback value is within the
+range of F3.14 set value, maintain the sleep delay time
+and enter the disturbed sleep. When the feedback
+value is less than the recovery threshold (PID polarity
+
+is positive), recover immediately.
+
+0000~2122
+
+1010
+
+Set the quantitative number
+
+The operation keyboard is used to set the quantification
+of PID control, and this function is valid only if the PID
+given channel is number (F3.00 ten is 1 or 2). If F3.00
+ten is 2, used as the pressure given, this parameter is
+consistent with the unit of F3.18.
+
+0. 0~100. 0%
+
+0. 0%
+
+F3.02
+
+Feedback channel gain
+
+When the feedback channel is not consistent with the
+set channel level, the feedback channel signal.
+
+0.01~10.00
+
+F3.03
+
+proportional gain P
+
+integration time Ti
+
+F3.05
+
+rate time Td
+
+The speed of PID adjustment speed is set by the two
+parameters of proportional gain and integration time.
+It requires the fast adjustment speed to increase the
+proportional gain and reduce the integration time, and
+the slow adjustment speed to reduce the proportional
+gain and increase the integration time. In general, the
+differential time is not set.
+
+0.01~5.00
+
+0.1~50. 0s
+
+0.1~10.0s
+
+sampling period T
+
+The larger the sampling period, the slower the response,
+but the better the inhibition effect on the interference
+
+signal, which is not necessary to be set.
+
+0.1~10.0s
+
+20
+

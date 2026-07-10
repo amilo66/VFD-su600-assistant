@@ -1,0 +1,64 @@
+The deviation limit is the ratio of the absolute value
+T of the system feedback to the deviation of the given
+Deviation limit ~ 9 9
+F3.07 quantification. When the feedback is within the 0.0~-20.0% 0.0% o
+deviation limit, the PID adjustment does not move.
+3. 08 | Closed loop preset frequency Frequency and operation time of frequency converter 0. 0~ _FFRAmi# 0. OHz
+F3. 09 Preset the frequency hold time before PID is put into operation 0. 0~999. 95 0.0s %
+If the actual feedback value is greater than the set
+value and the output frequency reaches the lower
+) frequency, the inverter enters the sleep state (i. e., ) 0
+F3.10 Sleep valve value coefficient zero speed operation) after the delay waiting time 0. 0~150. 0% 100. 0% o
+defined by F3.12; this value is the percentage of the
+PID set value.
+If the actual feedback value is less than the set value,
+. . . the frequency converter after the delayed waiting time )
+F3. 11 Awakening valve value coefficient defined by F3.13; this value is a percentage of the PID 0. 0~150. 0% 90. 0% o
+set value.
+F3.12 |[Sleep delay time Set the sleep delay time 0.0~999. 9s 100. 0s O
+F3.13 |Wake up delay time Set the wake-up delay time 0.0~999. 9s 1.0s O
+. Deviation between feedback i i i i
+F3. 14 ; TFns functional parameter is only valid for 0.0~10. 0% 0. 5% 0O
+and set pressure during sleep disturbed dormancy mode
+F3.15 |Doom tube detection delay time | Set the tube burst detection delay time 0.0~130. 0s 0.0S O
+When the feedback pressure is greater than or equal
+to this set value, the fault is reported "EPA0" after the
+F3.15 burst delay. When the feedback pressure is less
+1- H . ~ 0, 0
+F3. 16 | High pressure test valve value than this set value, the fault "EPAQ" is automatically 0.0~200. 0% 150. 0% O
+reset; this threshold is the percentage of the given
+pressure.
+When the feedback pressure is less than this set value,
+) report the burst fault "EPA0" after F3.15 delay. When
+R3, 17 |Lew pressure detection valve the feedback pressure is greater than the set value, 0.0~200.0% 50. 0% )
+value " - P hic thrachald i
+EPAOQ" will reset; this threshold is the
+percentage of the given pressure.
+0.00~99.99 (MPa.
+F3. 18 |[Sensor range Set the maximum range of the sensor 10. 00MPa @)
+Kg)
+F4 group-Advanced functional parameters
+FC name Set the scope Minimum unit seitng | change
+F4. 00 The motor is rated power 0. 0~2000. OKW X
+0~500V: 380V
+F4.01 The motor is rated voltage X
+i 0~250V: 220V
+Motor parameter setting
+F4. 02 Rated current of motor 0.1~999. 9A X
+F4.03 | Rated frequency of motor 1. 0~999. 9Hz 50. OHz X
+F4. 04 Motor rated speed 0~9999RPM X
+F4. 05 No-load current of motor Set the motor 0. 1A~ [F4.01]) X
+0: invalid
+F4. 06 AVR function 1: The whole process is effective 0~2 0 X
+2: Invalid only for deceleration
+: Aut ti trol
+F4. 07 Cooling fan control 0: Automatic contro moqe . 0~1 0 O
+1: The power-on process is always running
+When the number of barrier reset is set to 0, there is
+F4. 08 Number of automatic reset no automatic reset function, which can only be 0~10 0 %
+
+manually reset. 10 means that the number of barriers
+is not limited, that is, countless times.
+
+21
+

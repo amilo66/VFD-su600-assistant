@@ -1,0 +1,72 @@
+Communication timeout
+
+If the machine does not receive the correct data signal
+within the time interval defined by this function code,
+
+then the machine considers that the communication is
+faulty, the inverter will decide whether to protect or
+
+F6. 02 check-out time maintain the status quo according to the setting of the 0. 1~100. 0s 0.0s X
+communication failure action mode; when this value
+is set to 0.0, the RS485 communication timeout will not
+be checked out.
+This function code defines the intermediate time
+interval between receiving the end of the inverter
+hi hi del. data frame and sending the response data frame to
+F6. 03 This machine response delay h computer computer. If the response time 0~200ms oms X
+is less than the system processmg time, the system
+processing time shall prevail.
+This function code is used to set the welght coefﬁaent
+of the frequency command received by the
+machine through the RS485 1nterface and the actual
+P . . operating frequency of the local machine is equal to
+Fo6. 04 roportion continuum the function code value multiplied by the frequency 0.01~10.00 1. 00 O
+coefficient setting instruction value received through the RS485
+interface. In the connection control, this function code
+can set the proportion of multiple frequency converter
+operating frequency.
+Fo6. 05 continue to have - — 0 X
+F7 group - Supplementary functional parameters
+FC name Set the scope Minimum unit Factory setting| change
+LED bit: count reaches processing
+0: Weekly count, stop the output
+1: Single week count, continue to output
+2: Cycle count, stop the output
+3: Cycle count, continue to output
+. L. LED ten tens: res
+F7.00 Counting and timing mode LED 100 bits: timing arrival processmg 000~303 103 X
+0: Weekly timing, stop the ut
+1: Weekly timing, commue to output
+2: Cycle the timing, and stop the output
+3: cycle timing, continue to output
+LED thousand bits: reserved
+F7.01 Counter reset value setting Sets the counter-reset value [F7.02) ~9999 1 O
+F7.02 Counter detection value setting |  Set the counter detection value 0~ [F7.01] 1 @)
+F7.03 Timeline time setting Set timing time 0~9999s Os O
+F7.04
+~ continue to have - - 0 @)
+F7.07
+F7.08 Pop frequency control o Prqhibit 0~1 0 X
+: :valid
+0: Fixed swin,
+The swing reference value is the maximum output
+B frequency (F0.04).
+Amplitude control q y ~
+F7.09 P hange the swing 0~1 0 X
+The swing amplitude reference value is the given
+channel frequency.
+F7. 10 Start mode selection of swing O Start in the state of memory before shutdown 0~1 0 %
+' frequency shutdown 1: Start starting again
+~ . . The pendulum frequency amplitude is the percentage . 0 o
+F7.11 Pressing frequency amplitude relative to the maximum output frequency (F0.04). 0.0~100. 0% 0. 0% O
+This function code refers to the range of rapid decline
+after the frequency reaches the upper frequency of the
+swing frequency process. Of course, it also refers to the
+F7.12 The jump frequency range of rapid increase after the frequency reachesthe | (). 0~50. 0% 0. 0% O
+
+lower frequency of the swing frequency. This value is
+the percentage relative to the pendulum frequency
+amplitude (F7.11),
+
+25
+

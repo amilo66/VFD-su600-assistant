@@ -1,0 +1,69 @@
+. . L 0: Invalid
+F5. 12 Point action priority enables 1: When the inverter is running, the highest priority 0~1 0 X
+Inhibition coefficient of
+F5.13 oscillations 0~200 30 O
+When the motor shocks, set F5.00 thousand bits
+F5. 14 The amplitude inhibition effective, open the shock suppression functlon 0~12 0
+. coefficient and ad]ust by setting the shock suppre 5
+coefﬁc1ent In general, increase the sh k
+The lower limit of the oscillation sion coefficient F5.13, F 5.14 to F 5.16; in
+F5. 15 suppression frequency specml situations, F 5.13 to F 5.16 0.0~ [F5.161] 5. OHz O
+Oscillatory suppression at the [ F5.15 1 ~
+IEE]% ceiling frequency [F0.05) 45. OHz O
+LED bits: Select 0 in acceleration: Invalid
+1: valid LED ten: select 0
+deceleration: Invalid
+L 1: valid LED 100
+F5. 17 | Waveby-wave flow restriction bits: selected from the constant speed 000~1111 1011 X
+selection 0: Invalid 1: valid LED th
+bltS dead area compensatlon selectlon
+0: Invalid 1: valid
+Note: Dead zone compensation is only valid for F0.01.
+When the ratio of maximum and minimum value in
+three-phase output current is greater than this
+Output is missing the phase coefficient and the duration exceeds 6 seconds, the
+L | > inverter reports the output current imbalance fault ~
+Fb. 18 protection detection factor EPLI, this parameter cannot be set too small, it is 0. 00~20. 00 2.00 o
+recommended to set above 2.00; the output missing
+phase protection is invalid at F5.18-0.0
+Y =N =N [51)
+A WA= T i
+The decrease coefficient of the N
+F5.19 instantaneous power drop Set the instantaneous drop frequency drop coefficient %5& 0 O
+frequency
+1~9999
+220V:180~330V
+Instant power drop frequenc th d i 250V Model settin
+F5. 20 o p p freq y Set power drop frequency drop point g X
+om 380V:300~550V
+450V
+Low-frequency carrier is used 0: invalid .
+F5.21 | oo e trent invat 0~1 1 X
+F6 group-Communication parameters
+FC name Set the scope Minimum unit Factory setting | change
+F6. 00 This machine address Set the local address, 0 is the broadcast address. 0~247 1 X
+LED individual bit: Baud rate selection
+0:9600BPS
+1:19200BPS
+2:38400BPS
+LED ten-place: data format
+0: No chec
+1: Double check
+A 2: Strange verification
+F6. 01 MODBUS (j‘ommumcatlon LED 100 bits: communication response mode 0000~0322 0000 X
+configuration
+
+0: Normal respo:
+1: Only only to the slave address
+
+2: No response
+
+3: The slave does not respond to the free shutdown
+command of the host in broadcast mode
+
+LED thousand bits: reserved
+
+nse
+
+24
+

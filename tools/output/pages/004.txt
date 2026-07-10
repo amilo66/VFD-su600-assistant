@@ -1,0 +1,58 @@
+Catalogue
+
+Chapter | Product Information
+
+1.1 namingrules
+
+1.2 SU-600 Inverter Series Index
+Chapter Il Technical indicators and specifications of products
+
+2.1 Technical indicators and specifications of products
+Chapter Ill installation and wiring of Inverter
+
+3.1 installation considerations
+
+3.2 Outline figure
+
+3.3 basic operation wiring
+
+3.4 Control loop terminal
+3.5 0.4KW-2.2KW main circuit terminal
+
+3.63.7KW-5.5KW main circuit terminal
+3.7 description of the main control board jumper
+
+3.8 wiring considerations
+Chapter IV Communication Protocol
+
+1 RTU mode and format
+
+2.description of read and write function codes
+
+3. register address
+
+4. description of the parameter address of the communication protocol -
+
+5.03 read function mode
+
+6.06H write function mode
+Chapter V exception handling
+
+1 exception handling
+Chapter VI description of parameters
+1 Parameter description
+
+Chapter VIl instructions for setting Macro parameter s
+1 description of setting macro parameters
+
+Chapter VIl Certificate of conformity
+
+1 certificate of qualification
+
+0o N ~NNN~Noooo b w W NONR R~
+
+= = 00
+= O
+
+NN ODNRERE R =
+O W O O F = |

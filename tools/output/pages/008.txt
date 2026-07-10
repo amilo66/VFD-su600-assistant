@@ -1,0 +1,41 @@
+[
+
+. Please confirm whether the power supply voltage of the incoming line is
+consistent with the
+In danger of injury and fire.
+
+. Connect the brake resistance or the brake unit.
+There is a danger of a fire.
+
+. Itis best to choose a screwdriver and wrench with a specified torque to tighten
+the terminal.
+There is a danger of a fire.
+
+. Do not connect the input power cord to the output U, Vand W terminals.
+Adding the voltage to the output terminal will cause internal damage to the frequency converter
+
+. Do not remove the front panel cover. Only remove the terminal cover when wiring.
+May cause internal damage to the frequency converter.
+
+N
+
+w
+
+H
+
+wu
+
+3.2, shape diagram
+a. External lead keyboard base dimensions
+
+e  a— |
+1
+
+il
+
+Wl
+
+Hole size of keyboard base Keyboard thickness
+W W1 H H1 D D1
+o3mm | 49.4mm | 79mm | 75.4mm | 15.9mm | 14. 5mm
+

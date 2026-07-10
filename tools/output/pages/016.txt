@@ -1,0 +1,117 @@
+5. exception handling
+
+Common anomalies and countermeasures in Table 4-2:
+
+abnormal phenomena
+
+Possible causes and countermeasures
+
+The keyboard is not displayed|
+
+Check whether the power failure, whether t! p supply is short of phase, and whether
+the input power supply cord is wrongly connected
+
+The keyboard is not
+displayed, but the
+in-machine charging
+indicator light is on
+
+Check whether there are problems in the wiring and socket related to the keyboard, and measure
+the voltage of the control power supply in the machine to confirm whether the switching power
+supply works normally. If the switching power supply does not work normally, check whether the
+tch power supply inlet line (+, ) socket is well connected, whether the vibration is damaged or
+the voltage regulator pipe is normal.
+
+The motor The motor has a buzzing
+does not turn sound
+
+The motor load is too heavy, try to reduce the load
+
+No abnormalities
+were found
+
+Confirm whether it is in the trip state or has not reset after the trip, whether it is in the state of
+power drop agaln whether the keyboard has been reset, whether it has entered the program
+running stat ulti-speed running state, specific running state or non-running state, can try
+the method of restormg the factory value
+
+Confirm that the running instruction is given
+
+Check that the operating frequency is setto 0
+
+The motor cannot increase and
+slow down smoothly
+
+T I decel . P 1 2 . 1 Ten] . .
+pprog time
+
+The current limit is set too small, and the limit is increased
+
+Overvoltage protection action during deceleration to increase the deceleration time
+
+The carrier frequency setting is not appropriate, the load is too heavy or the oscillation occurs
+
+Heavy load, and insufficient torque. V/ F mode increase torque value, if stlll cant meet the
+
+equirements, can switch to simple vector control m ode, pay attention to t or parameters
+should match the actual value, if still can not meet the requirements, it is recommended to switch
+to advanced vector control mode, still pay attention to the motor parameters is consistent with the
+actual value, and the best motor parameter tuning.
+
+Motor power does not match the frequency converter power. Set the motor p 1 tual value
+
+T+l Pl 1
+E 5
+
+One tow the torque lift mode to the manual lift mode
+
+The motor can rotate but cannot
+adjust the speed
+
+The upper and lower frequency limits are not appropriate
+
+The frequency setting is low, or the frequency gain setting is too small
+
+Check whether the used speed regulation mode coincides with the set frequency given
+
+The motor can rotate but cannot
+adjust the speed
+
+Check whether the load is too heavy and is in the overvoltage stall or overcurrent limit state
+
+h
+
+The load fluctuates frequently
+
+| parameters
+1 1val
+
+Frequency settir poor contact or frequency given signal fluctuation. Change to a
+given mode of d1g1ta1 frequency or increase the filter time constant of the analog input signal
+
+The motor rotates in the opposite
+direction
+
+Adjust the phase sequence of the output terminals U, V, and W
+
+Set the running direction (F0.12=1) to reverse
+
+For directional uncertainty caused by output phase deficiency, check the motor wiring immediately
+
+Table 4-2 Common abnormal phenomena and countermeasures
+
+6. parameter declaration
+
+O - -Parameters that can be modified in any state- -Parameters that cannot be modified in running state 4 - -actual
+detection parameters, unable to modify <> - -manufacturer parameters, only by the manufacturer and prohibited
+by users
+
+FO group-Basic running parameters
+
+FC name content Set the scope ngtt.‘,’,'g’ change
+. 0: General mode
+Functional 1 Smgle pump constant pressure water supply mode
+F0.00 | macro 2~3: K 0~10 0 X
+definition 4: Engraver machine mode
+5~10: Hold on
+

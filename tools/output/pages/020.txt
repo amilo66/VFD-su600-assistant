@@ -1,0 +1,55 @@
+Jump 0.0~to upper limit
+F1.13 frequency By setting the jump frequency and range, the frequency 0. OHz
+frequency converter can avoid the mechanical
+F1.14 | Jump range resonance point of the load. 0. 0~10. OHz 0. OHz
+0: potentiometer + digital frequency 1
+1: potentiometer + digital frequency 2
+2: potentiometer + Al
+3: Digital frequency: 1 + Al
+Frequency 4: Digital frequency: 2 + AT
+F1.15 combination 5: Digital frequency of 1 + multisegment speed 0~9 0
+in a given way 6: Digital frequency of 2 + multisegment speed
+7: potentiometer + multistage speed
+8: Al + PLC (same superposition)
+9: Keep
+LED bit: PLC enable control
+0: invalid
+1: valid LED ten place:, operation mode selection
+0: Single cycle
+1: Continuous circulation
+Programmable 2: Keep the final value after a single cycle LED 100
+ti :
+Fl.16 :g::foion bits: Start mode 0: start from the first paragraph to 0000~1221 0000
+] start
+(31mp1§ PLC 1: start from the stage of shutdown (failure) time
+operation) 2: Start from the stage and frequency of the
+shutdown (fault) time
+LED thousand bits: power out storage selection
+0: no storage 1: storage
+Multi-segment —Upper limit frequency ~ 5. OHz
+F1.17 speed frequency1 | Setthe segment speed-1 frequency upper limit frequency
+Multi-segment — Upper limit frequency ~ 10. OHz
+F1.18 speed frequency 2 Set the segment speed of 2 frequency upper limit frequency
+Multi-segment ) — Upper limit frequency ~ 15. OHz
+F1.19 speed frequency 3 Set the segment speed of 3 frequency upper limit frequency
+. Multi-segment — Upper limit frequency ~ 20. OHz
+F1.20 speed frequency 4 Set the segment speed of 4 frequency upper limit frequency
+Multi-segment — Upper limit frequency ~ 25. OHz
+F1.21 speed frequency 5 Set the segment speed of 5 frequency upper limit frequency
+Multi-segment — Upper limit frequency ~ 37. 5Hz
+Fl.22 speed frequency 6 Setthe segment speed of 6 frequency upper limit frequency
+Multi-segment — Upper limit frequency ~ 50. OHz
+F1.23 speed frequency 7 Set the segment speed of 7 frequency upper limit frequency
+F1. 24 Phase 1 run time Set speed 1 running time (selected by [F1.35], default to seconds) 0.0~999. 9s 10. Os
+F1.25 | Phase2runtime Set speed 2 running time (selected by [F1.35], default to seconds) 0.0~999. 9s 10. 0s
+F1.26 Phase 3 run time Set speed 3 running time (selected by [F1.35], default to seconds) 0. 0~999. 95 10. 0s
+. Set segment speed 4 running time (unit selected by [F1.35], default to
+F1.27 | Phase4runtime econds) 0.0~999. 9s 10. 0s
+. . Set segment speed 5 running time (unit selected by [F1.35], default to
+F1.28 [PhaseSrundtime | 0 a0 0.0~999. 9s 10. 0s
+. Set segment speed 6 running time (unit selected by [F1.35], default to
+F1.29 |Phascoruntime | S¢tscgmentsp gtime ( y 0.0~999. 9s 10. 0s
+F1. 30 Phase 7 run time Setzfg;)lent speed 7 running time (unit selected by [F1.35], default to 0. 0~999. 95 10. Os
+
+sec
+

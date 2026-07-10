@@ -1,0 +1,75 @@
+[
+    {
+        "id": "macro0",
+        "nombre": "Macro 0: V/F estándar (por defecto)",
+        "aplicacion": "Aplicaciones generales de par constante",
+        "descripcion": "Configuración básica para uso estándar con control V/F lineal. Adecuada para la mayoría de aplicaciones industriales.",
+        "parametros": [
+            {"codigo": "P00.01", "valor": "0", "nota": "Control V/F"},
+            {"codigo": "P04.01", "valor": "0", "nota": "Curva V/F lineal"}
+        ],
+        "pagina": 27
+    },
+    {
+        "id": "macro1",
+        "nombre": "Macro 1: Control de bomba",
+        "aplicacion": "Bombas centrífugas, sistemas de agua",
+        "descripcion": "Optimizada para bombas. Curva V/F cuadrática para ahorrar energía a bajas velocidades. Protección contra funcionamiento en seco.",
+        "parametros": [
+            {"codigo": "P00.01", "valor": "0", "nota": "Control V/F"},
+            {"codigo": "P04.01", "valor": "2", "nota": "Curva cuadrática (ahorro energía)"},
+            {"codigo": "P00.11", "valor": "15.0", "nota": "Aceleración suave"},
+            {"codigo": "P00.12", "valor": "15.0", "nota": "Deceleración suave"}
+        ],
+        "pagina": 27
+    },
+    {
+        "id": "macro2",
+        "nombre": "Macro 2: Ventilador",
+        "aplicacion": "Ventiladores, extractores, HVAC",
+        "descripcion": "Curva de par cuadrático ideal para ventiladores. Aceleraciones largas para evitar picos de corriente.",
+        "parametros": [
+            {"codigo": "P00.01", "valor": "0", "nota": "Control V/F"},
+            {"codigo": "P04.01", "valor": "2", "nota": "Curva cuadrática"},
+            {"codigo": "P00.11", "valor": "30.0", "nota": "Aceleración muy suave"},
+            {"codigo": "P00.12", "valor": "30.0", "nota": "Deceleración muy suave"}
+        ],
+        "pagina": 27
+    },
+    {
+        "id": "macro3",
+        "nombre": "Macro 3: Cinta transportadora",
+        "aplicacion": "Cintas, transportadores, cargas pesadas",
+        "descripcion": "Alto par de arranque con boost. Aceleración progresiva para evitar deslizamientos de la cinta.",
+        "parametros": [
+            {"codigo": "P00.01", "valor": "0", "nota": "Control V/F"},
+            {"codigo": "P04.01", "valor": "3", "nota": "1.2x par (alto arranque)"},
+            {"codigo": "P04.02", "valor": "5.0", "nota": "Torque boost 5%"},
+            {"codigo": "P00.11", "valor": "20.0", "nota": "Aceleración progresiva"}
+        ],
+        "pagina": 27
+    },
+    {
+        "id": "macro4",
+        "nombre": "Macro 4: Control PID (presión/temperatura)",
+        "aplicacion": "Control de proceso con realimentación",
+        "descripcion": "Configuración para lazo cerrado PID. Usa entrada analógica como realimentación y ajusta automáticamente la frecuencia.",
+        "parametros": [
+            {"codigo": "P00.01", "valor": "0", "nota": "Control V/F"},
+            {"codigo": "P00.03", "valor": "7", "nota": "Fuente: PID"},
+            {"codigo": "P00.02", "valor": "1", "nota": "Control por bornes"}
+        ],
+        "pagina": 28
+    },
+    {
+        "id": "macro5",
+        "nombre": "Macro 5: Velocidades múltiples",
+        "aplicacion": "Máquinas con varias velocidades fijas",
+        "descripcion": "Permite seleccionar hasta 8 velocidades predefinidas mediante entradas digitales.",
+        "parametros": [
+            {"codigo": "P00.01", "valor": "0", "nota": "Control V/F"},
+            {"codigo": "P00.03", "valor": "5", "nota": "Fuente: Multi-speed"}
+        ],
+        "pagina": 28
+    }
+]

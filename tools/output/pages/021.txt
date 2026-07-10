@@ -1,0 +1,67 @@
+LED single bit: stage 1 acceleration and
+deceleration time 0~1
+
+Stage
+acceleration LED ten place: stage 2 acceleration and
+F1.31 and deceleration time 0~1 0000~1111 0000 o
+) deceleration LED 100 bit: stage 3 acceleration and deceleration
+time selection time 0~1
+of 1 LED thousand bit: stage 4 acceleration
+and deceleration time 0~1
+LED single bit: stage 5 acceleration and
+Phase S
+i deceleration time 0~1
+acceleration .
+d LED ten place: stage 6 acceleration and
+F1. 32 an deceleration time 0~1 000~111 000 O
+deceleration i .
+. i LED 100: stage 7 acceleration and deceleration
+time selection .
+time 0~1
+of 2
+LED thousand: reserved
+F1. 33 Acceleration 0. 1~999. 9s
+! time 2 0. 4~4. OKW
+Set the acceleration and deceleration time of 2 10. 0s 10. 0s O
+Slow down 5. 5~7. 5KW
+Fl.34 time 2
+15. 0s
+LED single bit: process PID time unit
+LED ten places: simple PLC time unit
+LED 100 bits: conventional acceleration and
+- Time unit deceleration time unit
+F1. 35 000~211 000 X
+selection LED thousand bits: reserved
+0: In 1 second
+1:1 point in the unit
+2:In units of 0.1 seconds
+Forward and The transition time of the inverter to transition
+F1. 36 reverse dead from forward operation to reverse operation, or 0.0~999. 9s 0.0 @)
+zone time from reverse operation to forward operation.
+F2 group-analog and numerical input and output parameters
+FC name Set the scope Minimum unit f;‘ftﬁgfgy change
+F2. 00 [Alinputlower limit voltage 0.00~ [F2.01]) 0. 00V O
+- — Set the Al upper and lower limit voltage
+F2.01 |Alinputupper limit voltage [F2.01] ~10. 00V 10. 00V O
+The 1 AT limit shall
+F2.02 |pe 'ie?‘fcecrordiggfy sha Setting the upper and lower limits of the Al corresponds to the 0. 0% O
+— - setting, which corresponds to the percentage of the upper limit | —100. 0%~100. 0%
+F2.03 | iheupperlimitofAlis | frequency [F0.05. 100. 0% 0
+F2. 04
+~ continue to have - - 0 *
+F2.07
+Filtering time constant | 15 parameter is used to filter the input signals of the Al and
+F2.08 |of thel simulated input panel potentiometer to eliminate the influence of interference. 0.1~5.0s 0.1s O
+signa
+Simulated input shake When the analog input signal shows frequent fluctuations near
+F2.09 | stabilization deviation a given value, the frequency fluctuation caused by this 0.00~0. 10V 0. 00V O
+limit uctuation can be suppressed by setting F2.09.
+0: Output frequenc;
+AO analog quantity 1: output current 2: motor speed
+F2.10 | output terminal function | 3: Output voltage 0~5 0 @)
+selection 4:A1
+5: Keep
+AO bottomin ~ 0. 00V O
+F2. 11 g Set the upper and lower limits of the AO output 0.00~10. 00V/
+F2.12 | A0 output upper limit 0. 00~20. 00mA 10. 00V O
+

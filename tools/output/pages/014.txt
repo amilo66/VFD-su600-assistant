@@ -1,0 +1,68 @@
+: Underpressure
+
+: Keep
+
+: RS485 communication fault
+: Tube burst failure
+
+: Keep
+
+: Dual CPU communication failure
+: Keep
+
+: Keep
+
+: Current detection fault
+
+: Keep
+
+: Keep
+
+: Output phase deficiency
+
+5,03 Read the function mode:
+
+I nquiry information frame format (Send frame):
+
+Address 01H
+Function 03H
+
+21H
+
+Starting data address
+
+02H
+
+00H
+
+Data(2Byte)
+
+02H
+
+CRC CHK Low 6FH
+CRC CHK High F7H
+
+This section of data analysis:
+
+01H is the frequency converter address
+
+03H is the read function code
+2102H, is the starting address
+0002H is the number of read addresses, and 2102H and 2103H
+F76FH Is the 16-bit CRC effect of the code
+
+R esponse information frame format (return frame):
+
+Address 01H
+Function 03H
+DataNum*2 04H
+17H
+
+Datal[2Byte]
+70H
+00H
+
+Data2[2Byte]
+00H
+CRC CHK Low FEH
+

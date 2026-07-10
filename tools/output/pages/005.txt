@@ -1,0 +1,47 @@
+chapter 1 product information
+
+1.1 Naming rules
+SU-600 - 1R5 - G3
+
+voltage grade:  1: Single-phase 220 into three-phase 380 output G 1
+2: single-phase 220 into three-phase 220 output G 2
+3: three-phase 380 into three-phase 380 output G 3
+
+ower grade: Column 1R5 for1.5 kw
+OR4 for 400W
+OR12 for 120W
+And so on
+model:SU-600
+
+1.2 SU-600 frequency converter series index
+
+Frequency Power supply | Rated input | Rated output Adapted motor
+Converter mode Capacity (KVA)| current(A) current(A) KW HP
+Single Phase 220V into three phase 380V 50HZ/60HZ
+SUB00-0R75G1 15 3.4 25 075 1
+SUB00-1R5G1 3 5.0 37 15 2
+SUB00-2R2G1 4 5.8 5 22 3
+SUB00-3R7G1 59 10.5 9 37 5
+SUB00-5R5G1 8.9 14.6 13 55 75
+SUB00-7R5G1 1 21 17 75 10
+SUB00-11R0G1 17 26 25 1 15
+SUB00-15R0G1 21 35 32 15 20
+Single Phase 220V into three phase 220V 50HZ/60HZ
+SUB00-0R75G2 15 8.2 4 0.75 1
+SUB00-1R5G2 3 14 7 15 2
+SUB00-2R2G2 4 23 96 2.2 3
+SUB00-3R7G2 55 31 17 37 4
+SUB00-5R5G2 8.9 26 25 55 5
+SUB00-7R5G2 21 35 32 75 10
+SUB00-11R0G2 25 50 375 1 15
+SUB00-15R0G2 32 68 40 15 20
+Three-phase 380V into three-phase 380V 50HZ/60HZ
+SUB00-0R75G3 15 36 25 0.75 1
+SUB00-1R5G3 3 5.1 4.1 15 2
+SUB00-2R2G3 4 6 5.8 2.2 3
+SUB00-3R7G3 6.1 10.5 9 4 5
+SUB00-5R5G3 8.9 14 13 55 75
+SUB00-7R5G3 1 21 17 75 10
+SUB00-11R0G3 17 26 25 1 15
+SUB00-15R0G3 21 35 32 15 20
+

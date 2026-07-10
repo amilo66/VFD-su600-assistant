@@ -1,0 +1,52 @@
+15: Is turning
+
+16: Reverse
+
+17: output the indicator signal when the output
+frequency drops to the speed detection level
+
+18~20: Retention
+
+F2.22 R closure delay A delay when the relay R state changes to which the
+output changes 0.0~255.0s 0.0s X
+F2.23 R disconnection delay
+Frequency reaches the FAR The output frequency is in the positive and negative
+F2.24 det;]ction};mplitude detection width of the set frequency, and the terminal | (. OHz~15. OHz 5. 0Hz O
+outputs the effective signal (low level).
+FOT AcPigsElE | ~
+F2.25 | The FDT level setpoint ity | 0 OHz~~upper 10. Ollz O
+_; limit frequency
+BiE]
+YT
+F2.26 | FDT lagvalues > 0. 0~30. OHz 1. OHz
+g S 30 O
+This function code is the frequency ifi rate
+when setting the frequency of the UP / DOWN
+F2.27 FDT lag values terminal, that is, the UP / DOWN terminal and the 0. 1Hz~99. 9HZ/S OHZ/S O
+COM terminal for one second, the amount of frequency
+change.
+) 0: indicates the level trigger mode
+F2. 28 The UP/DOWN terminal 1: represents the pulse trigger mode 0~TFH 0 o)
+modification rate Note: X1~X4 corresponds to 1H, 2H, 4H and 8H.
+0: A positive logic, that is, the Xi terminal is effectively
+connected to the public end, and the disconnect is
+invalid
+Ininput pulse trigger mode 1: Inverse logic, that is, the connection between the —~
+F2.29 (X1~X4) Xi terminal and the public end is invalid, and the 0~FH 0 O
+disconnection is valid
+te: X1~X4 corresponds to 1H, 2H, 4H and 8H.
+F2. 30 X1 Filter coefficient 0~9999 5 O
+. . To set the sensitivity of the input terminals. If the -
+F2. 31 X2 filtering coefficient digital input terminal is prone to interference and 0~9999 5 O
+. . . causes mlsoperanon thls parameter can be increased iy
+F2.32 X3 filtering coefficient to enhance the anti but the 0~9999 5 O
+. . sensitivity of the input terminal. ~
+F2.33 Xé Filter coefficient 1: represents 2MS scan time units 0~9999 5 O
+F2.34 | continue to have - 0 O
+If there is no change in the high or low level of the
+p . terminal within the time range set in this parameter, —
+F2.35 Shutdown delay time the requency converter will stop. This function 0.0~60s 2 X
+effective in both panel and terminal control.
+The F3 group- -the PID parameters
+FC name Set the scope Minimum unit Sgg‘;g change
+

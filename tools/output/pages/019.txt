@@ -1,0 +1,58 @@
+LED bit: starting mode 0: start from the starting
+frequency 1: first DC brake and then start from the
+
+starting frequency
+
+2: Keep
+F1.00 | start way LED ten: power failure or abnormal restart mode 0000~0012 00
+0: invalid 1: start from the starting frequency
+LED hundred bits: reserved LED thousand
+bits: retain
+Rl E
+F1.01 |frequency 0. 0~50. OHz 1. OHz
+of starting :
+|
+|
+|
+. ; >
+F1 0z | Startthe DC : | il 0.0~50.0% X 0. 0%
+) brake voltage : l motor rated voltage )
+| |
+|
+Start the DC
+F1.03 brake time 0.0~30. 0s 0.0s
+Downtime .
+F1.04 method 0: deceleration shutdown 1: Free shutdown 0~1 0
+Stop time DC FLSRE 4 0.0~ to upper limit
+F1.05 | brake starting frequency 0. OHz
+frequency |
+/ I\
+l
+: i G RS
+Shutdown of |/ l l =8 0. 0~50. 0% X
+|
+F1.06 | the DC brake : : motor rated voltage 0.0%
+voltage R |
+(BiE) : |
+|
+|
+| s is—
+F1.07 StOp the DC : : Tféﬂl?ﬁﬂzh%ﬁﬂﬁlﬂ 0. 0~30. 0s 0.0s
+brake time | E_S:%?E'Jihé
+' I | il
+| Lo A8 zhAi
+Shutdown for - ' - -RHBERA
+F1.08 | the DC brake &S 0. 00~99. 99s 0. 00s
+waiting time
+Set the movin,
+F1.09 |frequencyofthe
+positive turningpoint 3
+Set the %omt movement forward and 0. 0~50. Ollz 10. OHz
+Inse the point reverse frequency
+F1.10 frequency setting
+b1, 11 | Pontmerion 0. 1~999. 95
+accelerationtime | gt the point dynamic acceleration and 0. 4~4. OKW
+deceleration time 10. 0S Model setting
+F1.12 | qeceleration time 5. 5~17. 5KW
+15. 0S
+

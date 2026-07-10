@@ -1,0 +1,56 @@
+F4.09 [|Automatic fault reset interval time| Set the fault automatic reset interval time 0.5~25.0s 3.0s
+Enerev consumption brake start | If the internal DC side voltage of the converter is higher [ 330 ~ 380/660 ~
+F4. 10 Voltagy P than the energy braking start voltage, the built-in brake 350/780V
+8¢ 800V
+unit moves. If the brake resistance is connected at this
+] ] time, the voltage energy raised inside the frequency
+F4. 11 Energy consumption braking converter will be released through the brake re51stance 10~100% 100%
+: action ratio and the DC voltage will fall back.
+Inval
+F4. 12 Overmodulation function 0 n\lle(li id 0~1 0
+selection
+0: full frequency seven segment
+, 1: full frequency five se nt —
+F1.13 PWM pattern 2: seven paragraphs to ﬁve paragraphs 0~3 0
+3: Single-p. A 1
+The 1 notor will cause the speed to drop.
+Transfer difference Using the rotation compensanon can make the motor
+F4. 14 o . speed close to its synchronous speed, so that the motor | 0~200% 100%
+compensation coefficient speed control accuracy is higher. This coefficient is only
+valid for ordinary V / F and simple vectors.
+F4. 15 Transfer difference 0 Invalrd 0~1 0
+! compensation mode Note ThlS parameter is valid for advanced V /F
+F4. 16 Motor parameters by 0: invalid 0~1 0
+self-learning 1: Static self-learning (STAR immediately, END 18,)
+F4.17 Motor stator resistance 0. 00~200.00Q Model setting
+F4.18 Motor rotor resistance After changing the rated motor power F4.17, F4.01, 0. 00~200. 00 Q Model setting
+F4.02, F4.04, ¥4.05, F4.18~F4.20 are automatically
+updat ted to the motor default parameters of the .
+F4.19 Motor fixed, rotor mutual sense | corresponding power. 0. 00~200. 00mH Model setting
+F4. 20 i\/é?ltsf)er is set, the rotor leakage 0. 00~200. 00mH Model setting
+- Speed loop (ASR 1) —
+F4.21 proportional gain 1~100 30
+) The velocity loop (ASR 1) -
+F4. 22 integration time 0.01~10. 00S 0.50
+F4. 23 | Switch low frequency Clj)l;rg(t)llorrrll cgdes F4.21~F4.26 are valid in the vector 0. 0~10. OHz 50
+The speed response properties of the vector control
+Speed loop (ASR 2 are changed by setting the proportional gain P a:
+F4. 24 pEoportiofla(l gain) the integration time I. 1~100 20
+. The velocity loop (ASR 2)
+F4.25 | integration e 0.01~10. 00S 1.00
+[F4. 23] ~
+F4. 26 | Switch High Point Frequency 10.0
+320. OHz
+In the vector control mode, this parameter is used to
+Vector transfer difference adjust the speed accuracy of the motor. When the 0 9
+F4. 27 compensation motor is heavy, the speed is low, the parameter is 50%~200% 100
+increased, otherwise the parameter is reduced.
+F4. 28 Igss‘t]ilotmty loop filtering time Set the speed loop filtering time constant 0. 000~1. 000S 0.008
+F4.29 continue to have — - 0
+F4. 30 Speed loop torque limit 'g?ti}slse;;gi)oir:t is the percentage of the rated current 0. 0% ~200. 0% 170.0
+0: keyboard number given
+F4. 31 Recurrent instruction selection 1. A 0~2 0
+2: reserved
+
+22
+

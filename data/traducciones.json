@@ -1,0 +1,82 @@
+{
+    "P00.01": {
+        "nombre_es": "Modo de control",
+        "explicacion_es": "Selecciona cómo controla el variador el motor. V/F (0) es para uso general, Vector Control (1,2) es para más precisión y par."
+    },
+    "P00.02": {
+        "nombre_es": "Fuente de comando de arranque",
+        "explicacion_es": "De dónde viene la orden de marcha/paro. 0=Teclado, 1=Bornes, 2=Comunicación."
+    },
+    "P00.03": {
+        "nombre_es": "Fuente de frecuencia",
+        "explicacion_es": "De dónde viene la velocidad objetivo. Puede ser del teclado, entrada analógica, comunicación, etc."
+    },
+    "P00.11": {
+        "nombre_es": "Tiempo de aceleración",
+        "explicacion_es": "Segundos que tarda en ir de 0 a frecuencia máxima. Más lento = menos picos de corriente."
+    },
+    "P00.12": {
+        "nombre_es": "Tiempo de deceleración",
+        "explicacion_es": "Segundos que tarda en frenar de frecuencia máxima a 0. Más lento = menos sobretensión."
+    },
+    "P02.01": {
+        "nombre_es": "Frecuencia máxima",
+        "explicacion_es": "La velocidad más alta que puede alcanzar el motor (en Hz)."
+    },
+    "P02.02": {
+        "nombre_es": "Frecuencia de arranque",
+        "explicacion_es": "Frecuencia mínima al arrancar. Útil para vencer la fricción inicial."
+    },
+    "P02.05": {
+        "nombre_es": "Corriente nominal del motor",
+        "explicacion_es": "La corriente del motor en amperios. IMPORTANTE: pon el valor de la placa del motor."
+    },
+    "P04.01": {
+        "nombre_es": "Curva V/F",
+        "explicacion_es": "Cómo varía el voltaje con la frecuencia. Lineal (0) para cargas normales, cuadrática (2) para bombas/ventiladores (ahorra energía)."
+    },
+    "P04.02": {
+        "nombre_es": "Torque boost",
+        "explicacion_es": "Extra de voltaje al arrancar para vencer la inercia. Útil para cintas transportadoras."
+    },
+    "F0.00": {
+        "nombre_es": "Frecuencia actual",
+        "explicacion_es": "La velocidad a la que está girando el motor ahora mismo (en Hz)."
+    },
+    "F0.01": {
+        "nombre_es": "Corriente de salida",
+        "explicacion_es": "Cuánta corriente está consumiendo el motor ahora (en amperios)."
+    },
+    "F0.02": {
+        "nombre_es": "Voltaje de salida",
+        "explicacion_es": "El voltaje que el variador está enviando al motor."
+    },
+    "F0.03": {
+        "nombre_es": "Voltaje del bus DC",
+        "explicacion_es": "El voltaje interno del variador. Debe estar alrededor de 540V para 400V de entrada."
+    },
+    "F0.04": {
+        "nombre_es": "Velocidad del motor",
+        "explicacion_es": "RPM reales del motor calculadas a partir de la frecuencia."
+    },
+    "F0.05": {
+        "nombre_es": "Frecuencia de inicio de frenado DC",
+        "explicacion_es": "A partir de qué frecuencia se activa el frenado por inyección de corriente continua al parar."
+    },
+    "F1.00": {
+        "nombre_es": "Estado de entradas digitales",
+        "explicacion_es": "Muestra qué entradas digitales (DI1-DI6) están activas ahora mismo."
+    },
+    "F1.01": {
+        "nombre_es": "Estado de salidas digitales",
+        "explicacion_es": "Muestra qué salidas de relé están activas."
+    },
+    "F2.00": {
+        "nombre_es": "Energía consumida",
+        "explicacion_es": "Contador de energía eléctrica consumida en kWh."
+    },
+    "F7.00": {
+        "nombre_es": "Último fallo",
+        "explicacion_es": "El código del último error que ocurrió. Útil para diagnóstico."
+    }
+}

@@ -1,0 +1,58 @@
+0: VF control
+1: Advanced VF control
+Fo.01 | Motor 2: Simple vector control 0~1 0
+control mode
+3: Advanced vector control
+4: Torque control
+Run the 0: Panel runs the command channel
+F0. 02 gﬁzgﬁzlnd 1: Terminal run command channel 0~9 0
+selection 2: Communication running command channel
+0: Panel potentiometer 1: number given 1,
+operation panel A, ¥ key adjustment
+2: Number given 2, terminal UP / DOWN adjustment
+3: Al simulation given (0~10V /0 ~ 20 mA)
+Frequency 4: combination given
+F0.03 | given the ok 8 0~7 0
+choice - reep L .
+6: Communication given
+7: Keep
+Note: Select the combination for timing, and select
+the combination for mode in F1.15.
+. . . . MAX {50.0,
+Maximum The maximum output frequency is the highest {
+F0.04 | output frequency allowed by the converter and is the [F0.05) } ~ 50. OHz
+frequency benchmark for acceleration and deceleration. 999. 911z
+MAX{0. 1,
+upper The operating frequency cannot exceed this
+F0.05 | limiting frequency [Fo0.06] } ~ 50. OHz
+frequency [F0.04]
+Lower limit | The running frequency cannot be below this -
+F0. 06 frequency frequency 0. 0~ EfHIH 0. OHz
+Lower bound .
+frequency 0: Zero speed operation _
+FO.07 | eaches the 1: operating at lower limit frequency 0~2 0
+processing 2: stop
+Run the : - :
+F0.08 |frequency ;};*l[isasle‘glol:t is the frequency number given the 0.0~ |Rgi% 10. Oz
+number setting u
+LED single bit: power-out storage
+0: Storage
+1: No storage
+LED ten-place: shutdown maintenance
+0: Keep
+1: Don't keep
+i ital LED 100 bits: UP / DOWN negative frequency
+Digita regulation -
+F0.09 | frequency 0: avalid 0000~2111 0000
+control 1: ;r;‘lliadl
+LED thousand bits: PID, PLC frequency
+superposition selection
+0: invali
+1:F0.03+PID
+2:F0.03+PLC
+lerati It takes the time for the inverter to accelerate from | (. 1~999. 95
+F0.10 |acceleration the zero frequency to the maximum output ML E
+time frequency 0. 4~4. OKW
+
+13
+

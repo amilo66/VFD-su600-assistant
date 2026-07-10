@@ -1,0 +1,32 @@
+{
+    "motor": {
+        "potencia_kw": "",
+        "potencia_cv": "",
+        "voltaje_v": "",
+        "corriente_a": "",
+        "rpm": "",
+        "frecuencia_hz": "50",
+        "factor_potencia": "",
+        "tipo": ""
+    },
+    "bomba": {
+        "tipo": "",
+        "caudal_m3h": "",
+        "altura_m": "",
+        "presion_bar": "",
+        "notas": ""
+    },
+    "variador": {
+        "modelo": "SU-600",
+        "potencia_kw": "",
+        "voltaje_entrada_v": "",
+        "ubicacion": "",
+        "fecha_instalacion": "",
+        "notas": ""
+    },
+    "general": {
+        "cliente": "",
+        "proyecto": "",
+        "notas": ""
+    }
+}

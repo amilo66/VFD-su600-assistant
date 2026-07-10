@@ -1,0 +1,35 @@
+Thanks for you selecting and using our SU-600 frequency converter
+products.
+
+Please read this specification manual carefully before using to use this product
+correctly and safely.
+
+Please read [safety notices] carefully before using.
+
+Please keep this manual properly so that it is convenient for you to check and
+read when required. Any questions please contact our customer service staff to ask
+for technical support, our professionals will do best to service for you.
+
+This operating manual provided the relate information of SU-600 frequency
+converter, the contents include:
+
+< safety notices of frequency converter
+
+<> installation and inspection of frequency converter
+& wiring instruction of frequency converter
+
+<> operation instruction of frequency converter
+
+< all parameters instruction
+
+<> communication agreement instruction
+
+<> troubleshooting
+
+This operating manual suitable to be consulted by the below operators:
+
+<> system design and model select staffs
+<> installation or wiring staffs
+<> debugging staffs
+
+<> maintain or maintenance staffs

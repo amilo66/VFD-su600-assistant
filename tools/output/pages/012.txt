@@ -1,0 +1,50 @@
+2, read and write function code description:
+
+FC function declaration
+03 Read the register
+06 Write register
+
+3. Register address
+
+Register function address
+Control command input 2000H
+Monitoring parameter reading (d-00-d-31) 1000H~001FH
+Communication frequency setting 2001H
+
+User parameter setting (F 0.00 to F 8.06)
+
+0000H~0806H
+
+Parameter setting of the manufacturer (F9.00~F9.10)
+
+0900H~090AH
+
+4. Parameter and address description of the communication protocol:
+function declaration Address definition| Data meaning description R/W
+0001H: Stop
+Communication control 0012H: Forward turn operation
+comman 2000H : p w
+0013H: Forward point operation
+0022H: reverse operation
+0023H: reverse point operation
+The set frequency range of communication
+P is-10000 to 10000.
+Sl?(ﬂ?égﬁécrlact;fo;dtd(;zgg 2001H Note: The communication set frequency is the W
+percentage relative to the maximum frequency,
+ranging from-100.00% to 100.00%).
+Communication control 0001H: External fault input
+command 2002H w
+0002H: Fault reset
+2102H Set frequency (two decimal places) R
+2103H Output frequency (two decimal places) R
+2104H Output current (to one decimal place) R
+2105H Bus voltage (one decimal place) R
+2106H Output voltage (one decimal place) R
+ORF?}?etgsgist%ilp/ﬁon 2107H Analog input Al (two decimal places) R
+shutdown parameters 2108H continue to have R
+2109H Current gauge values R
+210AH motor speed R
+210BH Analog output AO (two decimal places) R
+210CH continue to have R
+210DH Frequter temperature (one decimal place) R
+

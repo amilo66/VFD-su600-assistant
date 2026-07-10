@@ -1,0 +1,267 @@
+[
+    {
+        "codigo": "F2.00",
+        "nombre": "AI input lower limit voltage",
+        "descripcion": "Set the AI upper and lower limit voltage.",
+        "rango": "0.00~[F2.01]",
+        "fabrica": "0.00V",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.01",
+        "nombre": "AI input upper limit voltage",
+        "descripcion": "Set the AI upper and lower limit voltage.",
+        "rango": "[F2.01]~10.00V",
+        "fabrica": "10.00V",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.02",
+        "nombre": "The lower AI limit shall be set accordingly",
+        "descripcion": "Setting the upper and lower limits of the AI corresponds to the setting, which corresponds to the percentage of the upper limit frequency [F0.05].",
+        "rango": "-100.0%~100.0%",
+        "fabrica": "0.0%",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.03",
+        "nombre": "The upper limit of AI is set accordingly",
+        "descripcion": "Setting the upper and lower limits of the AI corresponds to the setting, which corresponds to the percentage of the upper limit frequency [F0.05].",
+        "rango": "-100.0%~100.0%",
+        "fabrica": "100.0%",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.08",
+        "nombre": "Filtering time constant of the simulated input signal",
+        "descripcion": "This parameter is used to filter the input signals of the AI and panel potentiometer to eliminate the influence of interference.",
+        "rango": "0.1~5.0s",
+        "fabrica": "0.1s",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.10",
+        "nombre": "AO analog quantity output terminal function selection",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Output frequency"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Output current"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Motor speed"
+            },
+            {
+                "valor": "3",
+                "descripcion": "Output voltage"
+            },
+            {
+                "valor": "4",
+                "descripcion": "AI"
+            },
+            {
+                "valor": "5",
+                "descripcion": "Keep"
+            }
+        ],
+        "rango": "0~5",
+        "fabrica": "0",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.11",
+        "nombre": "AO bottoming",
+        "descripcion": "Set the upper and lower limits of the AO output.",
+        "rango": "0.00~10.00V/0.00~20.00mA",
+        "fabrica": "0.00V",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.12",
+        "nombre": "AO output upper limit",
+        "descripcion": "Set the upper and lower limits of the AO output.",
+        "rango": "0.00~10.00V/0.00~20.00mA",
+        "fabrica": "10.00V",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.13",
+        "nombre": "Input terminal X1 function",
+        "descripcion": "0: Control end idle. 1: Forward point control. 2: Reverse point control. 3: Forward rotation control (FWD). 4: Reverse Control (REV). 5: Three-line operation control. 6: Free shutdown control. 7: External shutdown signal input (STOP). 8: External reset signal input (RST). 9: External fault open input. 10: Frequency increase instruction (UP). 11: Frequency decreasing instruction (DOWN).",
+        "rango": "0~60",
+        "fabrica": "3",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.14",
+        "nombre": "Input terminal X2 function",
+        "descripcion": "Same options as X1.",
+        "rango": "0~60",
+        "fabrica": "4",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.15",
+        "nombre": "Input terminal X3 function",
+        "descripcion": "Same options as X1.",
+        "rango": "0~60",
+        "fabrica": "0",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.16",
+        "nombre": "Input terminal X4 function",
+        "descripcion": "Same options as X1.",
+        "rango": "0~60",
+        "fabrica": "0",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.18",
+        "nombre": "The FWD/REV terminal control mode",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Second-line control mode 1"
+            },
+            {
+                "valor": "1",
+                "descripcion": "Second-line control mode 2"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Three-line control mode 1"
+            },
+            {
+                "valor": "3",
+                "descripcion": "Three-line control mode 2"
+            },
+            {
+                "valor": "4",
+                "descripcion": "Three-line control mode 3"
+            },
+            {
+                "valor": "5",
+                "descripcion": "Keep"
+            }
+        ],
+        "rango": "0~5",
+        "fabrica": "0",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.20",
+        "nombre": "R Output Settings",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "Idle"
+            },
+            {
+                "valor": "1",
+                "descripcion": "The frequency converter is ready for operation"
+            },
+            {
+                "valor": "2",
+                "descripcion": "Converter in operation"
+            },
+            {
+                "valor": "3",
+                "descripcion": "Converter in operation at zero speed"
+            },
+            {
+                "valor": "4",
+                "descripcion": "External fault shutdown"
+            },
+            {
+                "valor": "5",
+                "descripcion": "Inverter fault"
+            },
+            {
+                "valor": "6",
+                "descripcion": "Frequency/speed arrival signal (FAR)"
+            },
+            {
+                "valor": "7",
+                "descripcion": "Frequency/speed level detection signal (FDT)"
+            }
+        ],
+        "rango": "0~20",
+        "fabrica": "5",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.24",
+        "nombre": "Frequency reaches the FAR detection amplitude",
+        "descripcion": "The output frequency is in the positive and negative detection width of the set frequency.",
+        "rango": "0.0Hz~15.0Hz",
+        "fabrica": "5.0Hz",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.25",
+        "nombre": "The FDT level setpoint",
+        "rango": "0.0Hz~Upper limit frequency",
+        "fabrica": "10.0Hz",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.26",
+        "nombre": "FDT lag values",
+        "rango": "0.0~30.0Hz",
+        "fabrica": "1.0Hz",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.27",
+        "nombre": "The UP/DOWN terminal modification rate",
+        "descripcion": "This function code is the frequency modification rate when setting the frequency of the UP/DOWN terminal.",
+        "rango": "0.1Hz~99.9Hz/s",
+        "fabrica": "1.0Hz/s",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.30",
+        "nombre": "X1 Filter coefficient",
+        "descripcion": "To set the sensitivity of the input terminals.",
+        "rango": "0~9999",
+        "fabrica": "5",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.31",
+        "nombre": "X2 filtering coefficient",
+        "descripcion": "To set the sensitivity of the input terminals.",
+        "rango": "0~9999",
+        "fabrica": "5",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.32",
+        "nombre": "X3 filtering coefficient",
+        "descripcion": "To set the sensitivity of the input terminals.",
+        "rango": "0~9999",
+        "fabrica": "5",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.33",
+        "nombre": "X4 Filter coefficient",
+        "descripcion": "To set the sensitivity of the input terminals.",
+        "rango": "0~9999",
+        "fabrica": "5",
+        "pagina_pdf": 20
+    },
+    {
+        "codigo": "F2.35",
+        "nombre": "Shutdown delay time",
+        "descripcion": "If there is no change in the high or low level of the terminal within the time range set in this parameter, the frequency converter will stop.",
+        "rango": "0.0~60s",
+        "fabrica": "2",
+        "pagina_pdf": 20
+    }
+]

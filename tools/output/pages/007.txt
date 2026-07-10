@@ -1,0 +1,80 @@
+DCinjection Start frequency of shutdown DC brake: 0.00~ [F0.05] upper limit frequency
+braking Brake time: 0.0~30.0s; Brake current: 0.0%~50.0% rated voltage of the motor
+Low noise operation Carrier frequency 2.0KHZ~20.0KHZ is i ly adjustable to minimize motor noise
+counter One internal counter for easy system integration
+) Upper and lower limit frequency setting, frequency jump ti tion limit, turn difference
+Run the function frequency compensation, RS$485 communication, frequency mcreasmg, decreasmg control, fault self-recovery
+operation, etc
+
+show
+
+; Output frequency, output current, output voltage, motor speed set frequency, module temperature,
+running state
+PID setting, feedback amount, analog input and output, e
+
+operating
+
+panel is
+
+The alarm Record multiple operating parameters, such as output frequency, set frequency, output current,
+content output voltage, DC voltage, and module temperature, during the latest fault
+
+defencive function
+
+Over current, over voltage, under voltage, module fault, electronic thermal relay, overheating, short
+circuit, internal memory fault, etc
+
+ambient temperature -10°C ~ +40°C (ambient temperature is 40°C ~50°C, please decrease for use)
+The surrounding humidity 5% ~ 95% RH, anhydrous bead condensation
+surrounding environment Indoor (no direct sunlight, ion, fl ble gas, no oil fog, dust, etc.)
+height Over 1000 meters, 10% for every 1000 meters
+levels of protection 1P20
+structure
+cooling-down method Air-cooled, with fan control
+way to install Wall hanging type, cabinet type
+
+3. Installation and wiring of the frequency converter
+
+3.1 Notes for installation
+
+danger
+
+1. Before wiring, please confirm that the input power supply is cut off.
+
+Danger of electric shock and fire.
+
+2. Ask electrical engineering professionals to conduct wiring operations.
+
+Danger of electric shock and fire.
+
+3. The grounding terminal must be reliably grounded.
+
+(380V: Special 3rd earth)
+Danger of electric shock and fire.
+
+4. After the emergency stop terminal is connected, it must check whether the
+
+action is effective.
+There was a danger of injury.(The wiring responsibility is borne by the user)
+
+5. Do not touch the output terminal directly. The output terminal of the frequency
+
+converter is
+Risk of having an electric shock and causing a short circuit.
+
+6. Always install the terminal cover before power on. When removing the outer
+
+cover, always
+Risk of electric shock.
+
+7. Cut off the power supply, and wait 5 to 8 minutes to let the remaining power in
+
+the machine
+There is a danger of residual voltage on the electrolytic capacitor.
+
+8. Non-professional technical personnel, do not check and conduct maintenance work.
+
+Risk of electric shock.
+
+AN
+

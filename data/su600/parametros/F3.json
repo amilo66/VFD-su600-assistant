@@ -1,0 +1,154 @@
+[
+    {
+        "codigo": "F3.00",
+        "nombre": "The PID function setting",
+        "descripcion": "LED single bit: PID adjusting property. LED ten place: PID to the quantitative input channel. LED 100 bits: PID feedback quantity input channel. LED thousand bits: PID Sleep selection.",
+        "rango": "0000~2122",
+        "fabrica": "1010",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.01",
+        "nombre": "Set the quantitative number",
+        "descripcion": "The operation keyboard is used to set the quantification of PID control.",
+        "rango": "0.0~100.0%",
+        "fabrica": "0.0%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.02",
+        "nombre": "Feedback channel gain",
+        "descripcion": "When the feedback channel is not consistent with the set channel level, the feedback channel signal.",
+        "rango": "0.01~10.00",
+        "fabrica": "1.00",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.03",
+        "nombre": "Proportional gain P",
+        "descripcion": "The speed of PID adjustment speed is set by the two parameters of proportional gain and integration time.",
+        "rango": "0.01~5.00",
+        "fabrica": "2.00",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.04",
+        "nombre": "Integration time Ti",
+        "descripcion": "The speed of PID adjustment speed is set by the two parameters of proportional gain and integration time.",
+        "rango": "0.1~50.0s",
+        "fabrica": "1.0s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.05",
+        "nombre": "Rate time Td",
+        "descripcion": "The speed of PID adjustment speed is set by the two parameters of proportional gain and integration time.",
+        "rango": "0.1~10.0s",
+        "fabrica": "0.0s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.06",
+        "nombre": "Sampling period T",
+        "descripcion": "The larger the sampling period, the slower the response, but the better the inhibition effect on the interference signal.",
+        "rango": "0.1~10.0s",
+        "fabrica": "0.0s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.07",
+        "nombre": "Deviation limit",
+        "descripcion": "The deviation limit is the ratio of the absolute value of the system feedback to the deviation of the given quantification.",
+        "rango": "0.0~20.0%",
+        "fabrica": "0.0%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.08",
+        "nombre": "Closed loop preset frequency",
+        "descripcion": "Frequency and operation time of frequency converter before PID is put into operation.",
+        "rango": "0.0~Upper limit frequency",
+        "fabrica": "0.0Hz",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.09",
+        "nombre": "Preset the frequency hold time",
+        "descripcion": "Frequency and operation time of frequency converter before PID is put into operation.",
+        "rango": "0.0~999.9s",
+        "fabrica": "0.0s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.10",
+        "nombre": "Sleep valve value coefficient",
+        "descripcion": "If the actual feedback value is greater than the set value and the output frequency reaches the lower frequency, the inverter enters the sleep state.",
+        "rango": "0.0~150.0%",
+        "fabrica": "100.0%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.11",
+        "nombre": "Awakening valve value coefficient",
+        "descripcion": "If the actual feedback value is less than the set value, the frequency converter after the delayed waiting time defined by F3.13.",
+        "rango": "0.0~150.0%",
+        "fabrica": "90.0%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.12",
+        "nombre": "Sleep delay time",
+        "descripcion": "Set the sleep delay time.",
+        "rango": "0.0~999.9s",
+        "fabrica": "100.0s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.13",
+        "nombre": "Wake up delay time",
+        "descripcion": "Set the wake-up delay time.",
+        "rango": "0.0~999.9s",
+        "fabrica": "1.0s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.14",
+        "nombre": "Deviation between feedback and set pressure during sleep",
+        "descripcion": "This functional parameter is only valid for disturbed dormancy mode.",
+        "rango": "0.0~10.0%",
+        "fabrica": "0.5%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.15",
+        "nombre": "Doom tube detection delay time",
+        "descripcion": "Set the tube burst detection delay time.",
+        "rango": "0.0~130.0s",
+        "fabrica": "0.5s",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.16",
+        "nombre": "High pressure test valve value",
+        "descripcion": "When the feedback pressure is greater than or equal to this set value, the fault is reported \"EPA0\" after the F3.15 burst delay.",
+        "rango": "0.0~200.0%",
+        "fabrica": "150.0%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.17",
+        "nombre": "Low pressure detection valve value",
+        "descripcion": "When the feedback pressure is less than this set value, report the burst fault \"EPA0\" after F3.15 delay.",
+        "rango": "0.0~200.0%",
+        "fabrica": "50.0%",
+        "pagina_pdf": 22
+    },
+    {
+        "codigo": "F3.18",
+        "nombre": "Sensor range",
+        "descripcion": "Set the maximum range of the sensor.",
+        "rango": "0.00~99.99(MPa, Kg)",
+        "fabrica": "10.00MPa",
+        "pagina_pdf": 22
+    }
+]

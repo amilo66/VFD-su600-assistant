@@ -1,0 +1,164 @@
+{
+    "protocolo": "Modbus RTU",
+    "baudrates": ["9600", "19200", "38400", "57600", "115200"],
+    "formato": "8 bits datos, 1 bit parada, sin paridad",
+    "funciones": [
+        {
+            "codigo": "03H",
+            "nombre": "Read Holding Registers",
+            "descripcion": "Leer registros de retención"
+        },
+        {
+            "codigo": "06H",
+            "nombre": "Write Single Register",
+            "descripcion": "Escribir un registro individual"
+        }
+    ],
+    "registros": [
+        {
+            "direccion": "2000H",
+            "nombre": "Control command",
+            "tipo": "R/W",
+            "descripcion": "Comando de control (paro/marcha/forward/reverse)"
+        },
+        {
+            "direccion": "2001H",
+            "nombre": "Communication frequency setting",
+            "tipo": "R/W",
+            "descripcion": "Frecuencia por comunicación (-100.00% a 100.00%)"
+        },
+        {
+            "direccion": "2002H",
+            "nombre": "Communication control command",
+            "tipo": "R/W",
+            "descripcion": "Comandos auxiliares (fault reset, etc.)"
+        },
+        {
+            "direccion": "2100H",
+            "nombre": "Fault code",
+            "tipo": "R",
+            "descripcion": "Código de fallo actual (00=sin fallo)"
+        },
+        {
+            "direccion": "2101H",
+            "nombre": "Control word",
+            "tipo": "R/W",
+            "descripcion": "Palabra de control (run/stop/forward/reverse)"
+        },
+        {
+            "direccion": "2102H",
+            "nombre": "Set frequency",
+            "tipo": "R",
+            "descripcion": "Frecuencia configurada (2 decimales)"
+        },
+        {
+            "direccion": "2103H",
+            "nombre": "Output frequency",
+            "tipo": "R",
+            "descripcion": "Frecuencia de salida actual (2 decimales)"
+        },
+        {
+            "direccion": "2104H",
+            "nombre": "Output current",
+            "tipo": "R",
+            "descripcion": "Corriente de salida (1 decimal)"
+        },
+        {
+            "direccion": "2105H",
+            "nombre": "Bus voltage",
+            "tipo": "R",
+            "descripcion": "Voltaje del bus DC (1 decimal)"
+        },
+        {
+            "direccion": "2106H",
+            "nombre": "Output voltage",
+            "tipo": "R",
+            "descripcion": "Voltaje de salida (1 decimal)"
+        },
+        {
+            "direccion": "2107H",
+            "nombre": "Analog input AI",
+            "tipo": "R",
+            "descripcion": "Entrada analógica AI1 (2 decimales)"
+        },
+        {
+            "direccion": "2109H",
+            "nombre": "Current gauge values",
+            "tipo": "R",
+            "descripcion": "Valor de corriente (1 decimal)"
+        },
+        {
+            "direccion": "210AH",
+            "nombre": "Motor speed",
+            "tipo": "R",
+            "descripcion": "Velocidad del motor en RPM"
+        },
+        {
+            "direccion": "210BH",
+            "nombre": "Analog output AO",
+            "tipo": "R",
+            "descripcion": "Salida analógica AO (2 decimales)"
+        },
+        {
+            "direccion": "210DH",
+            "nombre": "Inverter temperature",
+            "tipo": "R",
+            "descripcion": "Temperatura del variador (1 decimal)"
+        },
+        {
+            "direccion": "210EH",
+            "nombre": "PID feedback value",
+            "tipo": "R",
+            "descripcion": "Valor de retroalimentación PID (2 decimales)"
+        },
+        {
+            "direccion": "210FH",
+            "nombre": "PID setpoint",
+            "tipo": "R",
+            "descripcion": "Consigna PID (2 decimales)"
+        },
+        {
+            "direccion": "2111H",
+            "nombre": "Pulse input frequency",
+            "tipo": "R",
+            "descripcion": "Frecuencia de entrada por pulsos"
+        },
+        {
+            "direccion": "2112H",
+            "nombre": "Current failure",
+            "tipo": "R",
+            "descripcion": "Fallo actual"
+        },
+        {
+            "direccion": "2113H",
+            "nombre": "Current timing",
+            "tipo": "R",
+            "descripcion": "Tiempo actual de funcionamiento"
+        },
+        {
+            "direccion": "2114H",
+            "nombre": "Input terminal status",
+            "tipo": "R",
+            "descripcion": "Estado de entradas digitales (bits)"
+        },
+        {
+            "direccion": "2115H",
+            "nombre": "Output terminal status",
+            "tipo": "R",
+            "descripcion": "Estado de salidas digitales (bits)"
+        }
+    ],
+    "parametros": [
+        {
+            "rango": "F0.00 - F8.06",
+            "direccion_base": "0000H - 0806H",
+            "descripcion": "Parámetros de usuario"
+        },
+        {
+            "rango": "F9.00 - F9.10",
+            "direccion_base": "0900H - 090AH",
+            "descripcion": "Parámetros de fabricante"
+        }
+    ],
+    "pagina_pdf": 11
+}

@@ -1,0 +1,63 @@
+[
+    {
+        "codigo": "F8.00",
+        "nombre": "Run to monitor the primary parameter project selection",
+        "descripcion": "For example, F8.00=2, to select the output voltage (d-02), then the default display item in the main monitoring interface is the current output voltage value.",
+        "rango": "0~31",
+        "fabrica": "0",
+        "pagina_pdf": 27
+    },
+    {
+        "codigo": "F8.01",
+        "nombre": "Downtime monitors the main parameter item selection",
+        "descripcion": "For example, F8.01=3, select the bus voltage (d-03), then the default display item in the main monitoring interface is the current bus voltage value.",
+        "rango": "0~31",
+        "fabrica": "1",
+        "pagina_pdf": 27
+    },
+    {
+        "codigo": "F8.02",
+        "nombre": "Run Secondary display (valid for dual display only)",
+        "descripcion": "For example, F8.02=4, to select the output current (d-02), then the default display item in the main monitoring interface is the current output voltage value.",
+        "rango": "0~31",
+        "fabrica": "4",
+        "pagina_pdf": 27
+    },
+    {
+        "codigo": "F8.03",
+        "nombre": "Downtime auxiliary display (valid for dual display only)",
+        "descripcion": "For example, F8.03=3, select the bus voltage (d-03), then the default display item in the main monitoring interface is the current bus voltage value.",
+        "rango": "0~31",
+        "fabrica": "3",
+        "pagina_pdf": 27
+    },
+    {
+        "codigo": "F8.04",
+        "nombre": "Motor speed display coefficient",
+        "descripcion": "Used to correct the speed scale display error, no effect on the actual speed.",
+        "rango": "0.01~99.99",
+        "fabrica": "1.00",
+        "pagina_pdf": 27
+    },
+    {
+        "codigo": "F8.05",
+        "nombre": "Parameter initialization",
+        "opciones": [
+            {
+                "valor": "0",
+                "descripcion": "No operation. The frequency converter is in the normal parameter reading and writing state."
+            },
+            {
+                "valor": "1",
+                "descripcion": "Restore the factory setting. All user parameters shall restore the factory settings according to the model."
+            },
+            {
+                "valor": "2",
+                "descripcion": "Clear the fault record. Clear up the contents of the fault record (d-19~d-24)."
+            }
+        ],
+        "rango": "0~2",
+        "fabrica": "0",
+        "pagina_pdf": 27
+    }
+]

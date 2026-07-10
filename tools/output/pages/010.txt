@@ -1,0 +1,40 @@
+* Braking resistor
+
+Circuit breaker
+
+power input three phase
+induction
+motor
+_//
+Pl AVOAVI =
+Multifunctional S
+i tt inal 4 128 J5M J1
+mpatierminan ¥4 ' ’ DC 0-10V/0-20mA
+P-E ACO ACI OFF
+
+COM analog output
+
+External keyboard interface
+
+485+
+J11
+
+RS485 communicate
+
+310V
+SK-10K | Al
+potentiomete DC 0-10V/ relay output
+DC 0-20mA
+D
+
+3.4 Control loop terminal
+
+|10V |GND|AT[A0|485+/485—|X1|X2|X3|X4|COM|TA|TC]
+
+3.5 0.4KW-2.2KW main loop terminal
+
+R |S/11 | T/12 U |V | W =]
+3.6 3.7TKW-5.5KW main loop terminal
+'R S|T|P+|PB|U |V |W =
+
+6
